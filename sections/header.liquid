@@ -215,6 +215,24 @@
         {% render 'social-icons' %}
       {% endif %}
 
+      {% capture search %}
+      {% if section.settings.search_enabled %}
+        <div class="search-container" data-autocomplete-{{ settings.enable_autocomplete }}>
+          <form action="{{ routes.search_url }}" class="search__form">
+            <input type="hidden" name="type" value="{{ settings.search_option }}" />
+            <span class="icon-search search-submit"></span>
+            <input type="text" name="q" placeholder="{{ 'general.search.title' | t: shop_name: shop.name }}" value="{% if search and search.results.first.price %}{{ search.terms | replace: '*', '' }}{% endif %}" autocapitalize="off" autocomplete="off" autocorrect="off" />
+          </form>
+
+          <div class="search-link">
+            <a href="{{ routes.search_url }}" class="icon-search dropdown_link" title="{{ 'general.search.title' | t | escape }}" data-dropdown-rel="search"></a>
+          </div>
+        </div>
+      {% endif %}
+    {% endcapture %}
+
+    {{ search }}
+
       <ul class="menu">
         {% if section.settings.phone_number != blank %}
           <li>
@@ -529,22 +547,6 @@
           {% endif %}
         {% endcapture %}
 
-        {% capture search %}
-          {% if section.settings.search_enabled %}
-            <div class="search-container" data-autocomplete-{{ settings.enable_autocomplete }}>
-              <form action="{{ routes.search_url }}" class="search__form">
-                <input type="hidden" name="type" value="{{ settings.search_option }}" />
-                <span class="icon-search search-submit"></span>
-                <input type="text" name="q" placeholder="{{ 'general.search.title' | t: shop_name: shop.name }}" value="{% if search and search.results.first.price %}{{ search.terms | replace: '*', '' }}{% endif %}" autocapitalize="off" autocomplete="off" autocorrect="off" />
-              </form>
-
-              <div class="search-link">
-                <a href="{{ routes.search_url }}" class="icon-search dropdown_link" title="{{ 'general.search.title' | t | escape }}" data-dropdown-rel="search"></a>
-              </div>
-            </div>
-          {% endif %}
-        {% endcapture %}
-
         {% if section.settings.menu_position == 'inline' %}
           {% if section.settings.logo_position == 'left' %}
             {{ logo }}
@@ -556,7 +558,10 @@
               </ul>
             </div>
 
+            {%- comment -%}
             {{ search }}
+            {%- endcomment -%}
+
           {% else %}
             <div class="nav nav--left">
               <ul class="menu {{ section.settings.menu_alignment }}">
@@ -572,7 +577,9 @@
               </ul>
             </div>
 
+            {%- comment -%}
             {{ search }}
+            {%- endcomment -%}
           {% endif %}
         {% else %}
           {{ logo }}
@@ -583,7 +590,9 @@
               {{ menu_right }}
             </ul>
 
+            {%- comment -%}
             {{ search }}
+            {%- endcomment -%}
           </div>
         {% endif %}
 

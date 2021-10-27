@@ -4,12 +4,13 @@
     "build": " node build_tools/compileCss.js source/styles/gift-card.css assets/gift-card.css.liquid && node build_tools/compileCss.js source/styles/styles.css assets/styles.css.liquid "
   },
   "dependencies": {
+    "@csstools/postcss-sass": "4.0.0",
     "autoprefixer": "^9.8.6",
+    "nodemon": "^2.0.14",
     "postcss": "7.0.35",
-    "postcss-scss": "3.0.4",
     "postcss-easy-import": "3.0.0",
     "postcss-fail-on-warn": "0.1.0",
-    "@csstools/postcss-sass": "4.0.0",
+    "postcss-scss": "3.0.4",
     "postcss-strip-inline-comments": "0.1.5"
   },
   "browserslist": [

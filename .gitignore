@@ -8,6 +8,9 @@ logs
 # The file containing environment variables 
 .env
 
+# Ignore config
+.yml
+
 # Ignore IDE specific files
 .idea/
 .vscode/
