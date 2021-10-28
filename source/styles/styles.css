@@ -14293,6 +14293,10 @@ video {
   filter: blur(99px);
 }
 
+html {
+  padding-bottom: 0 !important;
+}
+
 [data-section-type="background-video"] {
   .ImageHero {
     position: relative;
@@ -14611,6 +14615,7 @@ video {
 /* End timeline */
 
 .list-collections {
+  margin-top: 30px;
   .collection-list__item {
     height: 500px;
     @media (min-width: 1240px){
@@ -14646,6 +14651,14 @@ video {
           transform: none;
         }
       }
+    }
+  }
+}
+
+.footer {
+  .credits {
+    .register-at {
+      display: block;
     }
   }
 }

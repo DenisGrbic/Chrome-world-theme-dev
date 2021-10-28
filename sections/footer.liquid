@@ -189,7 +189,9 @@
         {% endif %}
 
         <p class="credits">
+          {%- comment -%}
           &copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: '/' }}.
+          {%- endcomment -%}
 
           {{ section.settings.copyright_text }}
 
@@ -197,7 +199,13 @@
             {{ 'layout.general.designer_credits_html' | t }}
           {% endif %}
 
+          <span class="register-at">
+            Chrome World JP Ltd., is a registered company in 〒535-0013, 2-1-6-2 Morishoji, Asahi-ku, Osaka-shi, Osaka, Japan
+          </span>
+
+          {%- comment -%}
           {{ powered_by_link }}
+          {%- endcomment -%}
         </p>
 
         {% if section.settings.display_payment_methods %}

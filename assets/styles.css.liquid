@@ -18039,6 +18039,10 @@ video {
   filter: blur(99px);
 }
 
+html {
+  padding-bottom: 0 !important;
+}
+
 [data-section-type=background-video] .ImageHero {
   position: relative;
   display: flex;
@@ -18338,6 +18342,9 @@ video {
   }
 }
 /* End timeline */
+.list-collections {
+  margin-top: 30px;
+}
 .list-collections .collection-list__item {
   height: 500px;
 }
@@ -18367,6 +18374,11 @@ video {
   font-size: 25px;
 }
 @media (max-width: 798px) {
+  .list-collections .collection-list__item .thumbnail-overlay .title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 798px) {
   .list-collections .collection-list__item .thumbnail-overlay {
     display: block !important;
     opacity: 1 !important;
@@ -18375,4 +18387,8 @@ video {
     opacity: 1;
     transform: none;
   }
+}
+
+.footer .credits .register-at {
+  display: block;
 }
