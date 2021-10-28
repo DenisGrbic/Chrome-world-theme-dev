@@ -89,3 +89,11 @@ $(document).ready(function() {
   });
 });
 
+$(".Timeline__NavItem").click(function() {
+  var index = $(this).attr("data-index");
+  $(this).closest(".Timeline__NavWrapper").find(".Timeline__NavItem").removeClass("is-selected");
+  $(this).addClass("is-selected");
+  $(".Timeline__ListItem .Timeline__Item").removeClass("is-selected");
+  $(".Timeline__Item[data-index='"+ index +"']").addClass("is-selected");
+});
+

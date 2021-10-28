@@ -36,7 +36,7 @@
       {% endif %}
 
       <div class="one-whole column">
-        <div class="list-collections-wrapper">
+        <div class="list-collections-wrapper" adsf>
           <div class="list-collections equal-columns--outside-trim is-flex is-flex-wrap">
             {% for block in blocks %}
               {% comment %} Content settings {% endcomment %}
@@ -55,10 +55,13 @@
                 {%- assign collection_image_alt = collection.products.first.featured_image.alt | escape -%}
               {% endif %}
 
-              <div class="{% render 'column-width', value: section.settings.frontpage_collections_per_row %} column {% if section.settings.collection_count == blank and section.settings.frontpage_collections_title == blank %}blank{% endif %} thumbnail {% if settings.mobile_products_per_row == '1' %} medium-down--one-half small-down--one-whole {% else %} medium-down--one-half small-down--one-half {% endif %}" {{ block.shopify_attributes }}>
+              <div class="collection-list__item{% render 'column-width', value: section.settings.frontpage_collections_per_row %} column {% if section.settings.collection_count == blank and section.settings.frontpage_collections_title == blank %}blank{% endif %} thumbnail {% if settings.mobile_products_per_row == '1' %} medium-down--one-half small-down--one-whole {% else %} medium-down--one-half small-down--one-half {% endif %}" {{ block.shopify_attributes }}>
                 <div class="product-wrap">
                   {% if collection_image != blank %}
-                    <div class="image__container">
+                    <div class="image__container"
+                      style="background-image:url({{ collection_image | img_url: '2000x' }})"
+                      >
+                      {%- comment -%}
                       {%
                         render 'image-element',
                         image: collection_image.src,
@@ -66,15 +69,16 @@
                         object_fit: section.settings.align_height,
                         max_height: section.settings.collection_height
                       %}
+                      {%- endcomment -%}
                     </div>
                   {% else %}
                     {% capture num %}{% cycle "1", "2", "3", "4", "5", "6" %}{% endcapture %}
                     {{ 'collection-' | append: num | placeholder_svg_tag: 'placeholder-svg' }}
                   {% endif %}
 
-                  <a href="{{ collection.url }}" class="hidden-product-link">
-                    {% if collection != blank %}
-                      {{ collection.title }}
+                  <a href="{{ block.settings.feature_collection }}" class="hidden-product-link">
+                    {% if block.setting.title != blank %}
+                      {{ block.settings.title }}
                     {% else %}
                       {{ 'homepage.onboarding.collection_title' | t }}
                     {% endif %}
@@ -82,26 +86,26 @@
 
                   {% if settings.thumbnail_hover_enabled %}
                     <div class="thumbnail-overlay">
-                      <a href="{{ collection.url }}" class="hidden-product-link">
-                        {% if collection != blank %}
-                          {{ collection.title }}
+                      <a href="{{ block.settings.feature_collection }}" class="hidden-product-link">
+                        {% if block.setting.title != blank %}
+                          {{ block.settings.title }}
                         {% else %}
                           {{ 'homepage.onboarding.collection_title' | t }}
                         {% endif %}
                       </a>
 
                       <div class="info">
-                        <div class="collection-details">
+                        <div class="collection-details large-title">
                           <span class="title">
-                            {% if collection != blank %}
-                              {{ collection.title }}
+                            {% if block.settings.title != blank %}
+                              {{ block.settings.title }}
                             {% else %}
                               {{ 'homepage.onboarding.collection_title' | t }}
                             {% endif %}
                           </span>
                         </div>
                         <a
-                          href="{{ collection.url }}"
+                          href="{{ block.settings.feature_collection }}"
                           title="{{ collection_title }}"
                           class="thumbnail-overlay__button global-button global-button--product-grid-text-hover"
                         >
@@ -113,8 +117,8 @@
 
                   <a class="collection-info__caption {% if settings.thumbnail_hover_enabled %}hidden{% endif %}" href="{{ collection.url }}">
                     <span class="title">
-                      {% if collection != blank %}
-                        {{ collection.title }}
+                      {% if block.setting.title != blank %}
+                        {{ block.setting.title }}
                       {% else %}
                         {{ 'homepage.onboarding.collection_title' | t }}
                       {% endif %}
@@ -200,9 +204,14 @@
       "name": "Collection",
       "settings": [
         {
-          "type": "collection",
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "url",
           "id": "feature_collection",
-          "label": "Collection"
+          "label": "Link"
         },
         {
           "type": "image_picker",

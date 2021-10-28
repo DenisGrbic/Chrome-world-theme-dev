@@ -95,6 +95,7 @@
         </div>
         <div class="featured-link--half one-half column image-with-text__text-column is-flex is-align-center image-with-text__column medium-down--one-whole block--{{ block.id }}">
           <div class="info text-align--{{ object.settings.frontpage_text_align }}">
+            <h6 class="collection_subtitle">{{ block.settings.subtitle }}</h6>
             <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} class="collection_title">
               {{ block.settings.title | escape }}
             </a>
@@ -289,6 +290,12 @@
               "label": "None"
             }
           ]
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Sub-heading",
+          "default": "CHROME HEARTS IS"
         },
         {
           "type": "text",
