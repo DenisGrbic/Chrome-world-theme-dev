@@ -369,7 +369,7 @@ window.video = {
       var $playButton = $videoWrapper.find('[data-play-button]');
       var $secondaryButton = $videoWrapper.find('[data-secondary-button]');
       var $videoText = $videoWrapper.find('[data-video-text]');
-      var $videoTextContainer = $videoWrapper.find('[data-video-text-container]');
+      var $videoTextContainer = "";//$videoWrapper.find('[data-video-text-container]');
       var $image = $videoWrapper.find('.video-wrapper__image');
       var $posterImage = $videoWrapper.data('poster-image-uploaded');
       var aspectRatio = $videoWrapper.data('aspect-ratio');
@@ -390,6 +390,11 @@ window.video = {
           var playerID = player.id;
           $videoElement = $section.find('.plyr--video');
         }
+
+        console.log("=section.js");
+        $(".shopify-section--video .plyr--video").each(function(){
+          $(this).find("video").trigger("click")
+        });
 
         if (playerID == videoID) {
 
@@ -422,6 +427,12 @@ window.video = {
               // HTML5 Mobile Video
             } else if (window.Shopify.media_queries.medium.matches && player.isHTML5) {
 
+              console.log("HTML5 Mobile Video");
+              // Auto play
+              player.autoplay = true;
+
+              player.play();
+
               // Hide image
               $image.hide();
 
@@ -429,7 +440,7 @@ window.video = {
               $videoElement.show();
 
               // Display button so that video can be played
-              $playButton.show();
+              // $playButton.show();
 
               player.on('play', function() {
                 // Show video

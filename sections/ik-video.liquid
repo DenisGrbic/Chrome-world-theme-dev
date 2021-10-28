@@ -1,0 +1,80 @@
+<section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="background-video" data-section-settings='{{ section_settings }}'>
+  <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %}">
+    <div class="ImageHero__VideoHolder">
+      <figure class="is-hidden-mobile-only" style="padding-top: 0;">
+        <video playsinline autoplay loop muted>
+          <source type="video/mp4" src="{{ section.settings.desktop-video }}" />
+        </video>
+      </figure>
+      
+      <figure class="is-hidden-desktop-only" style="padding-top: 0;">
+        <video playsinline autoplay loop muted>
+          <source type="video/mp4" src="{{ section.settings.mobile-video }}" />
+        </video>
+      </figure>
+      <a class="hero-link" href="{{ section.settings.button_link }}">{{ section.settings.button_text }}</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Background video",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Background videos are automatically muted to allow autoplay on mobile. If you require audio, use the \"Featured Video\" section."
+    },
+    {
+      "type": "select",
+      "id": "section_size",
+      "label": "Section size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "text",
+      "id": "desktop-video",
+      "label": "Desktop video CDN url",
+      "default": "https://cdn.shopify.com/s/files/1/0572/0257/3505/files/namba_black_hero_video_3.mp4?v=1628160207"
+    },
+    {
+      "type": "text",
+      "id": "mobile-video",
+      "label": "Mobile video CDN url",
+      "default": "https://cdn.shopify.com/s/files/1/0430/2779/2040/files/cw_homepage_video_mobile-compressed.mp4?v=1629100059"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "SHOP BEST SELLERS"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Video",
+      "name": "Background video",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

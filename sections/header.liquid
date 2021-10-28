@@ -78,7 +78,9 @@
         <span></span>
       </div>
 
+      {%- comment -%}
       <span class="menu_title">{{ 'layout.general.menu' | t }}</span>
+      {%- endcomment -%}
     </a>
 
     <a href="{{ routes.root_url }}" title="{{ shop.name | escape }}" class="mobile_logo logo">
@@ -626,6 +628,17 @@
   .sticky_nav .menu-position--block .header__logo {
     max-width: {{ section.settings.logo_display_width | append: 'px' }};
   }
+  .sticky_nav .menu-position--block .header__logo {
+    max-width: {{ section.settings.logo_display_width_sticky | append: 'px' }};
+  }
+  @media (max-width: 767px){
+    div.header__logo,
+    div.header__logo img,
+    div.header__logo span,
+    .sticky_nav .menu-position--block .header__logo {
+      max-width: {{ section.settings.logo_display_width_mob | append: 'px' }};
+    }
+  }
 </style>
 
 {% schema %}
@@ -717,6 +730,26 @@
       "type": "range",
       "id": "logo_display_width",
       "label": "Logo display width",
+      "step": 5,
+      "min": 105,
+      "max": 300,
+      "default": 300,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "logo_display_width_mob",
+      "label": "Mobile logo display width",
+      "step": 5,
+      "min": 105,
+      "max": 205,
+      "default": 200,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "logo_display_width_sticky",
+      "label": "Sticky header logo display width",
       "step": 5,
       "min": 105,
       "max": 205,

@@ -82,6 +82,10 @@ End jQuery Fixed Header
 ====================== */
 
 $(document).ready(function() {
-  $("header .search-enabled--true").fixedHeader();
+  console.log("Document ready");
+  // $("body.index header .search-enabled--true").fixedHeader();
+  $(".shopify-section--video .plyr--video").each(function(){
+    // $(this).find("video").trigger("click")
+  });
 });
 
