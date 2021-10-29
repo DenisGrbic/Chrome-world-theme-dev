@@ -87,6 +87,16 @@ $(document).ready(function() {
   $(".shopify-section--video .plyr--video").each(function(){
     // $(this).find("video").trigger("click")
   });
+
+  // Size Guide Page
+  $('.tiffany-product-options ul a').click(function(event) {
+    $('.tiffany-product-options ul a').removeClass('active');
+    $(this).addClass('active');
+  
+    var target = $(this).attr('aria-controls');
+    $('.tiffany-sizes-preview-block').removeClass('active');
+    $('#' + target).addClass('active');
+  });
 });
 
 $(".Timeline__NavItem").click(function() {
@@ -96,4 +106,3 @@ $(".Timeline__NavItem").click(function() {
   $(".Timeline__ListItem .Timeline__Item").removeClass("is-selected");
   $(".Timeline__Item[data-index='"+ index +"']").addClass("is-selected");
 });
-

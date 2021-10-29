@@ -10126,7 +10126,7 @@ $topMenuHeight: 40px;
 
   .mobile_nav-fixed--true.promo-banner--show #pagecontent {
     display: block;
-    margin-top: 70px;
+    margin-top: 30px;
   }
 
   .index-sections .under-menu:nth-child(1) {
@@ -11185,7 +11185,7 @@ html.remodal-is-locked {
   }
 
   #header .top-bar a.mobile_logo {
-    margin: 10px auto;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 34px;
     z-index: 5;
@@ -14663,6 +14663,217 @@ html {
   .credits {
     .register-at {
       display: block;
+    }
+  }
+}
+
+.shopify-section--product-template {
+  .breadcrumb__wrapper {
+    max-width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product_section {
+    max-width: 1330px;
+  }
+}
+
+.rk-widget-container {
+  display: none !important;
+}
+
+
+/**
+ * ----------------------------------------------------------------------------
+ * Tiffany stylings
+ * ----------------------------------------------------------------------------
+ */
+ .page--sizing-guides {
+   .container.content.page, .tiffany-container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 50px 24px;
+    @media (max-width: 798px) { 
+      padding: 50px 0;
+    }
+  }
+}
+.tiffany-title {
+  text-aligh: left;
+  font-size: 2rem;
+  color: #000;
+  line-height: 1;
+  letter-spacing: normal;
+  margin-top: 40px;
+}
+.tiffany-product-options {
+  margin-top: 64px;
+  border-bottom: 1px solid #000;
+  @media (max-width: 798px) { 
+    margin-top: 10px;
+  }
+  ul {
+    padding-left: 0;
+  }
+  ul:after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+  li {
+    list-style: none;
+    a {
+      padding: 5px 0;
+      text-decoration: none;
+      display: inline-block;
+      &.active {
+        font-weight: 600;
+        border-bottom: 1.5px solid #000;
+      }
+    }
+  }
+}
+.tiffany-sizes-preview-block {
+  display: none;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.tiffany-sizes-preview-block.active {
+  display: -webkit-box;
+  display: flex;
+}
+.tiffany-sizes-your-fit-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  table {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+    width: 100%;
+    display: inline-table;
+    margin-bottom: 16px;
+    th, td {
+      width: 40%;
+  	  padding: 6px 0;
+    }
+    th {
+      text-align: left;
+  	  font-size: 0.85em;
+    }
+    td {
+      font-weight: 600;
+      font-size: 0.8em;
+    }
+  }
+}
+.tiffany-sizes-description {
+  margin-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #81d8d0;
+  h3 {
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0;
+  }
+  p {
+    margin: 13px 0 16px;
+  }
+  a {
+    font-weight: 600;
+    padding-right: 15px;
+    background-image: url('https://cdn.shopify.com/s/files/1/0430/2779/2040/files/next.svg?v=1600332793');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    span {
+      background: -webkit-gradient(linear,left bottom,left top,from(#000000),to(#000000)) 0 100% no-repeat;
+      background: linear-gradient(0deg,#000000,#000000) 0 100% no-repeat;
+      background-color: none;
+      background-size: 0 1px;
+      -webkit-transition: background-size .5s;
+      transition: background-size .5s;
+      text-decoration: none;
+      display: inline;
+    }
+    &:hover span {
+      background-size: 100% 1px;
+    }
+  }
+}
+.tiffany-image-block {
+  img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1240px){
+  .tiffany-container {
+	padding: 0 30px;
+  }
+  .tiffany-title {
+    font-size: 2.5rem;
+  }
+  .tiffany-product-options ul li {
+    float: left;
+    a {
+      /* padding: 0 0 20px; */
+      display: block;
+      margin-right: 56px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+@media (min-width: 1008px){
+  .tiffany-sizes-preview-block {
+    flex-direction: row;
+  	flex-wrap: wrap;
+  	margin-top: 32px;
+  }
+  .tiffany-sizes-your-fit-block {
+  	width: 40%;
+    table {
+      -webkit-box-ordinal-group: 1;
+      -moz-box-ordinal-group: 1;
+      box-ordinal-group: 1;
+      height: 328px;
+      overflow-y: scroll;
+      display: block;
+      border-right: 3px solid #000;
+      margin-bottom: 0;
+      &::-webkit-scrollbar {
+        width: 2px;
+      }
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #000; 
+      }
+    }
+    .tiffany-sizes-description {
+      margin-top: 64px;
+      border-bottom: none;
+    }
+  }
+  .tiffany-image-block {
+    width: 60%;
+    img {
+      padding-left: 64px;
     }
   }
 }

@@ -244,7 +244,9 @@
     </style>
   </noscript>
 
-  <body class="{% if template == '404' %}error-404{% else %}{{ template | replace: '.', '-' | handle }}{% endif %}"
+  <body class="{% if template == '404' %}error-404{% else %}{{ template | replace: '.', '-' | handle }}{% endif %} 
+  {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }} 
+  {% if template.name == "page" or template.name == "Page" %}page--{{ page.handle }}{% endif %}"
         data-money-format="
           {%- if settings.currency_format == 'money_with_currency_format' -%}
             {{- shop.money_with_currency_format | strip_html -}}
@@ -295,9 +297,11 @@
       </div>
     {% endif %}
 
-    {% unless template contains 'index' or settings.secondary_newsletter_banner == false %}
-      {% section 'newsletter' %}
-    {% endunless %}
+    {%- comment -%}
+      {% unless template contains 'index' or settings.secondary_newsletter_banner == false %}
+        {% section 'newsletter' %}
+      {% endunless %}
+    {%- endcomment -%}
 
     {% section 'footer' %}
 
