@@ -115,15 +115,17 @@
                     </div>
                   {% endif %}
 
-                  <a class="collection-info__caption {% if settings.thumbnail_hover_enabled %}hidden{% endif %}" href="{{ collection.url }}">
+                  {%- comment -%}
+                  <a class="collection-info__caption" href="{{ collection.url }}">
                     <span class="title">
-                      {% if block.setting.title != blank %}
-                        {{ block.setting.title }}
+                      {% if block.settings.title != blank %}
+                        {{ block.settings.title }}
                       {% else %}
                         {{ 'homepage.onboarding.collection_title' | t }}
                       {% endif %}
                     </span>
                   </a>
+                  {%- endcomment -%}
                 </div>
               </div>
             {% endfor %}

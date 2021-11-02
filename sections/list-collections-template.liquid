@@ -129,6 +129,7 @@
 
                         <a href="{{ collection.url }}" title="{{ collection_title }}" class="hidden-product-link">{{ collection_title }}</a>
 
+                        {%- comment -%}
                         {% if settings.thumbnail_hover_enabled %}
                           <div class="thumbnail-overlay">
                             <a href="{{ collection.url }}" title="{{ collection_title }}" class="hidden-product-link">{{ collection_title }}</a>
@@ -147,8 +148,9 @@
                             </div>
                           </div>
                         {% endif %}
+                        {%- endcomment -%}
 
-                        <a class="collection-info__caption {% if settings.thumbnail_hover_enabled %}hidden{% endif %}" href="{{ collection.url }}">
+                        <a class="collection-info__caption" href="{{ collection.url }}">
                           <span class="title">{{ collection.title }}</span>
                         </a>
                       </div>

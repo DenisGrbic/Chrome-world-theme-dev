@@ -72,11 +72,15 @@
   {% endif %}
   <div class="container main content">
     <div class="one-whole column page">
+      {% if section.settings.page_title %}
+        <h2 class="title">{{ section.settings.page_title | escape }}</h2>
+      {% endif %}
+      {%- comment -%}
       {% unless image != blank or section.settings.show_banner %}
-        <h1>{{ page.title }}</h1>
-        <div class="feature_divider"></div>
+      <div class="feature_divider"></div>
       {% endunless %}
-
+      {%- endcomment -%}
+      
       {%
         render 'page-multi-column',
         content: page.content
@@ -146,6 +150,12 @@
       "id": "wide_display",
       "label": "Wide display",
       "default": true
+    },
+    {
+      "type": "text",
+      "id": "page_title",
+      "label": "Page title",
+      "default": "FAQ title"
     },
     {
       "type": "header",

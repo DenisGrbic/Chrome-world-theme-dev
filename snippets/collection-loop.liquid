@@ -56,6 +56,7 @@
 
       <a href="{{ link.url }}" title="{{ link_title }}" class="hidden-product-link">{{ link_title }}</a>
 
+      {%- comment -%}
       {% if settings.thumbnail_hover_enabled %}
         <div class="thumbnail-overlay">
           <a href="{{ link.url }}" title="{{ link_title }}" class="hidden-product-link">{{ link_title }}</a>
@@ -74,8 +75,9 @@
           </div>
         </div>
       {% endif %}
+      {%- endcomment -%}
 
-      <a class="collection-info__caption {% if settings.thumbnail_hover_enabled %}hidden{% endif %}" href="{{ link.url }}">
+      <a class="collection-info__caption" href="{{ link.url }}">
         <span class="title">{{ link_title }}</span>
       </a>
     </div>

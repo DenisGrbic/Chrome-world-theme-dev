@@ -255,6 +255,12 @@
           {%- endif -%}"
         data-shop-currency="{{ shop.currency }}"
         data-shop-url="{{ shop.url }}">
+
+  <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVCPK6F"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <script>
     document.documentElement.className=document.documentElement.className.replace(/\bno-js\b/,'js');
     if(window.Shopify&&window.Shopify.designMode)document.documentElement.className+=' in-theme-editor';
@@ -318,6 +324,29 @@
     {% if settings.show_shipping_calculator and template contains "cart" %}
       {% render 'cart-shipping-scripts' %}
     {% endif %}
+
+    <div id="ik-modal"></div>
+
+  <!-- Global site tag (gtag.js) - Google Ads: 405636611 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-405636611"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-405636611');
+  </script>
+
+  <script async type="text/javascript"
+    src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=TSzmiY"></script>
+  <script>
+    var _learnq = _learnq || [];
+    if ('{{ customer.email }}') {
+      _learnq.push(['identify', {
+          '$email' : '{{ customer.email }}'
+        }]);
+    }
+  </script>
 
   </body>
 </html>

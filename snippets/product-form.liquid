@@ -95,12 +95,40 @@
 
   <div class="purchase-details">
     {% if settings.display_product_quantity %}
+    <div class="product-detail-wrap">
       <div class="purchase-details__quantity product-quantity-box">
         <label for="quantity">{{ 'products.product.quantity' | t }}</label>
         <span class="ss-icon product-minus js-change-quantity" data-func="minus"><span class="icon-minus"></span></span>
         <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" {% if settings.limit_quantity and variant.inventory_management != blank and variant.inventory_policy == "deny" %}max="{{ variant.inventory_quantity }}"{% endif %} />
         <span class="ss-icon product-plus js-change-quantity" data-func="plus"><span class="icon-plus"></span></span>
       </div>
+      
+<!-- Start Size-Chart -->
+      {% assign sizing_guide_description_print = true %}
+      {% for collection in product.collections %}
+      
+        {% if collection.handle== 'pendants' %}
+           <button class="sizing-guide-button pendants-sizing-guide-button">Sizing Guide</button>
+        {% endif %}
+      
+        {% if collection.handle== 'chains' %}
+           <button class="sizing-guide-button chains-sizing-guide-button">Sizing Guide</button>
+        {% endif %}
+
+        {% if collection.handle == 'earrings' %}
+          {% assign sizing_guide_description_print = false %}
+        {% endif %}
+      
+        {% if collection.handle== 'rings' %}
+          {% assign sizing_guide_rings_button_print = true %}
+        {% endif %}
+      
+      {% endfor %}
+      {% if sizing_guide_rings_button_print %}
+        <span class="sizing-guide-button rings-sizing-converter-button">View size guide</span>
+      {% endif %}
+<!-- End Size-Chart -->
+    </div>
     {% endif %}
     <div class="purchase-details__buttons purchase-details__spb--{{ show_payment_button }} {% if product.available == false %}product-is-unavailable{% endif %}">
       {% if settings.cart_action == 'reload_page' %}
@@ -145,6 +173,7 @@
         {{ form | payment_terms }}
       </div>
     </div>
+    <p class="sizing-guide-description">The product is in limited quantity. We don’t guarantee the exchange for a different size.</p>
   </div>
 {% endform %}
 
