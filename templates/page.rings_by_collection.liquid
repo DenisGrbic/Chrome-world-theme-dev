@@ -1,0 +1,58 @@
+<section class="section">
+  <div class="container">
+    <div class="one-whole column center homepage_content">
+      <h2 class="title">{{ page.title }}</h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="product-list collection-matrix">
+    <div class="rings-collections-block">
+      {% assign collecions_to_display = 'Foti Harris Rings,Heart Rings,Plus Rings,Rolling Stones Rings,Spacer Rings,Special Rings,Spike Rings,Spinner Rings,Star Rings,Dagger Rings,Fleur Rings,Floral Rings,Cross Rings' | split:',' %}
+      {%- for collection in collections -%}
+        {%- if collecions_to_display contains collection.title -%}
+        {%- if collection.title == 'Special Rings' -%}
+          <!-- skipping special as we will display it as the last item -->
+          {% assign special_collection = collection %}
+        {%- else -%}
+            <div class="rings-collection">
+              {%- if collection.image -%}
+                {%- assign collection_image = collection.image -%}
+              {%- elsif collection.products.first and collection.products.first.images != empty -%}
+                {%- assign collection_image = collection.products.first.featured_image -%}
+              {%- else -%}
+                {%- assign collection_image = blank -%}
+              {%- endif -%}
+    
+              <a href="{{ collection.url }}">
+                <img src="{{ collection_image | img_url: '480x' }}" alt="{{ collection.title }}">
+                <div class="rings-collection-hover-content">
+                    <button class="global-button" data-action="see-collection">See Collection</button>
+                </div>
+              </a>
+            </div>
+        {%- endif -%}
+         {%- endif -%}
+      {%- endfor -%}
+      {%- if special_collection -%}
+        <!-- display special collection separately as the last item -->
+        <div class="rings-collection">
+          {%- if special_collection.image -%}
+            {%- assign collection_image = special_collection.image -%}
+          {%- elsif special_collection.products.first and special_collection.products.first.images != empty -%}
+            {%- assign collection_image = special_collection.products.first.featured_image -%}
+          {%- else -%}
+            {%- assign collection_image = blank -%}
+          {%- endif -%}
+    
+          <a href="{{ special_collection.url }}">
+            <img src="{{ collection_image | img_url: '480x' }}" alt="{{ special_collection.title }}">
+            <div class="rings-collection-hover-content">
+              <button class="global-button" data-action="see-collection">See Collection</button>
+            </div>
+          </a>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>

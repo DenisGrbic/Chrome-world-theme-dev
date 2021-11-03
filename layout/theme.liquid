@@ -190,7 +190,14 @@
       {{ settings.custom_scripts }}
     </script>
 
-    {{ content_for_header }}
+    {% if request.host == "cw-jp.myshopify.com" or template contains 'cart' or template contains 'checkout' %}
+      {{ content_for_header }}
+    {% else %}
+      {% capture content_for_header2 %}
+        {{ content_for_header }}
+      {% endcapture %}
+      {{ content_for_header2 | replace: ' defer="defer" ', ' type="no-load" ' | replace: " src=", " data-src=" | replace: "window.addEventListener('load', asyncLoad, false);", "window.addEventListener('ks_load', asyncLoad, false);" | replace: "DOMContentLoaded", "" }}
+    {% endif %}
 
     {% render 'social-meta-info' %}
 
@@ -267,6 +274,7 @@
     if(('ontouchstart' in window)||window.DocumentTouch&&document instanceof DocumentTouch)document.documentElement.className=document.documentElement.className.replace(/\bno-touch\b/,'has-touch');
   </script>
 
+    {% section 'announcement' %}
     {% section 'header' %}
 
     <div class="mega-menu-container">
@@ -302,12 +310,6 @@
     {% if template contains 'index' %}
       </div>
     {% endif %}
-
-    {%- comment -%}
-      {% unless template contains 'index' or settings.secondary_newsletter_banner == false %}
-        {% section 'newsletter' %}
-      {% endunless %}
-    {%- endcomment -%}
 
     {% section 'footer' %}
 
@@ -347,6 +349,8 @@
         }]);
     }
   </script>
+
+
 
   </body>
 </html>

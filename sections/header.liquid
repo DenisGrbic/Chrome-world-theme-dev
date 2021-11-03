@@ -60,14 +60,6 @@
 {% comment %}Mobile navigation{% endcomment %}
 
 <header id="header" class="mobile_nav-fixed--{{ section.settings.fixed_header }}">
-  {% if section.settings.promo_text != blank %}
-    <div class="promo-banner">
-      <div class="promo-banner__content">
-        {{ section.settings.promo_text }}
-      </div>
-      <div class="promo-banner__close"></div>
-    </div>
-  {% endif %}
 
   <div class="top-bar">
     <a class="mobile_nav dropdown_link" data-dropdown-rel="mobile_menu" data-no-instant="true">
@@ -207,18 +199,23 @@
 
 <header class="{% if feature_image %}feature_image{% endif %} {% if section.settings.logo_home != blank %}secondary_logo--true{% endif %} search-enabled--{{ section.settings.search_enabled }}">
   <div class="header {% if feature_image and settings.header_background == false %}is-absolute{% endif %} header-fixed--{{ section.settings.fixed_header }} {% if settings.header_background %}header-background--solid{% endif %}">
-    {% if section.settings.promo_text != blank %}
-      <div class="promo-banner">
-        <div class="promo-banner__content">
-          {{ section.settings.promo_text }}
-        </div>
-        <div class="promo-banner__close"></div>
-      </div>
-    {% endif %}
 
     <div class="top-bar">
       {% if section.settings.social_icons_header %}
         {% render 'social-icons' %}
+      {% endif %}
+
+      {% if locale_selector or currency_selector or settings.show_multiple_currencies == true %}
+        <li class="localization-wrap">
+          {%
+            render 'localization-switcher',
+            additional_classes: 'header-menu__disclosure',
+            id: 'header__selector-form',
+            currency_selector: currency_selector,
+            locale_selector: locale_selector,
+            show_currency: section.settings.show_currency_selector
+          %}
+        </li>
       {% endif %}
 
       {% capture search %}
@@ -257,19 +254,6 @@
 
       <div class="top-bar--right-menu">
         <ul class="menu">
-          {% if locale_selector or currency_selector or settings.show_multiple_currencies == true %}
-            <li class="localization-wrap">
-              {%
-                render 'localization-switcher',
-                additional_classes: 'header-menu__disclosure',
-                id: 'header__selector-form',
-                currency_selector: currency_selector,
-                locale_selector: locale_selector,
-                show_currency: section.settings.show_currency_selector
-              %}
-            </li>
-          {% endif %}
-
           <li>
             <a href="#smile-home" title="Rewards">REWARDS</a>
           </li>

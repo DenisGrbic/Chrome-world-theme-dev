@@ -109,7 +109,11 @@
                           title="{{ collection_title }}"
                           class="thumbnail-overlay__button global-button global-button--product-grid-text-hover"
                         >
+                        {% if block.settings.link_title != blank %}
+                          {{ block.settings.link_title }}
+                        {% else %}
                           {{ 'collections.general.view_all' | t }}
+                        {% endif %}
                         </a>
                       </div>
                     </div>
@@ -214,6 +218,11 @@
           "type": "url",
           "id": "feature_collection",
           "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "link_title",
+          "label": "Link title"
         },
         {
           "type": "image_picker",

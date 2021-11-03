@@ -1440,7 +1440,7 @@ body {
   text-transform: liquid-object("settings.regular_font_style");
   color: liquid-object("settings.regular_color");
   line-height: 1.6em;
-  overflow: auto;
+  /* overflow: auto; */
   background-color: liquid-object("settings.shop_bg_color");
   @liquid-if "settings.custom_bg != blank" {
     background-image: url(liquid-object("settings.custom_bg | img_url: '2000x'"));
@@ -2197,6 +2197,8 @@ body.is-active {
   pointer-events: none;
   text-align: left;
   width: 270px;
+  border: 1px solid #ddd;
+  padding: 20px 0;
   @liquid-if "settings.transparent_header" {
     background: liquid-object("settings.header_bg_color | color_modify: 'alpha', 0.9");
   } @liquid-else {
@@ -2204,13 +2206,20 @@ body.is-active {
   }
 
   li {
-    padding: 0 20px;
+    padding-left: 25px;
+    padding-right: 40px;
+    margin-bottom: 3px;
     display: block;
 
     a {
       display: block;
       font-size: liquid-object("settings.mega_text_font_size | append: 'px'");
       letter-spacing: liquid-object("settings.mega_text_letter_spacing | append: 'px'");
+
+      padding: 0;
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: .2em;
 
       @include respond-to($medium-down) {
         font-size: liquid-object("settings.mega_text_font_size | minus: 2 | append: 'px'");
@@ -2511,6 +2520,17 @@ p.cart-message a {
   display: flex;
   flex-wrap: nowrap;
   flex: 0 0 auto;
+  li > a::before {
+    color: #000;
+  }
+  a[href="#smile-home"], a:hover, a:visited {
+    color: #000 !important;
+  }
+  .cart-container:not(.active_link) {
+    .icon-cart:before, .cart_count {
+      color: #FFF;
+    }
+  }
 }
 
 .main-nav,
@@ -2647,6 +2667,7 @@ $cart--icon-width: 70px;
   justify-content: space-between;
   padding: 10px 20px;
   position: relative;
+  padding-bottom: 15px;
 
   .nav {
     display: flex;
@@ -4220,6 +4241,7 @@ div.breadcrumb-collection {
 }
 
 .breadcrumb__wrapper {
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -4938,7 +4960,8 @@ p.checkout_button {
   display: flex;
   flex: 1 0 calc(50% - 12px);
   flex-wrap: wrap;
-  margin-left: 6px;
+  margin-left: 0;
+  margin-top: 15px;
 
   @include respond-to($medium-down) {
     margin-top: 20px;
@@ -10003,7 +10026,7 @@ h4 span,
 
 /* Promo banner */
 
-$promoBannerHeight: 30px;
+$promoBannerHeight: 45px;
 
 .header .promo-banner,
 #header .promo-banner {
@@ -10031,6 +10054,7 @@ $promoBannerHeight: 30px;
   .promo-banner__content {
     margin: 0px auto;
     padding: 3px 1.5rem;
+    font-size: 14px;
 
     @include respond-to($medium-down) {
       font-size: 10px;
@@ -14288,20 +14312,20 @@ $delay: 0;
 }
 
 .hide--mobile {
-  @media (max-width: 767px){
+  @media (max-width: 798px){
     display: none !important;
   }
 }
 
 .hide--desktop {
-  @media (min-width: 768px){
+  @media (min-width: 799px){
     display: none !important;
   }
 }
 
 /* ik-filter */
-video {
-  /* filter: blur(99px); */
+video, img {
+  /* filter: blur(50px) !important; */
 }
 
 html {
@@ -15153,3 +15177,104 @@ html {
     margin: 0 auto;
   }
 }
+
+a[href="/collections/sale"] {
+  color: red;
+}
+
+
+/**
+ * ----------------------------------------------------------------------------
+ * Rings collections stylings
+ * ----------------------------------------------------------------------------
+ */
+ a.with-underline {
+  text-decoration: underline;
+}
+.rings-collections-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.rings-collection {
+  text-align: center;
+  flex: 1 0 45%;
+  margin: 10px;
+  position: relative;
+  .rings-collection-hover-content {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 13px;
+    padding: 28px 0;
+    background: #fff;
+    opacity: 0;
+    transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    padding: 0;
+  }
+}
+@media (min-width: 1008px) {
+  .rings-collection {
+    max-width: 50%;
+  }
+  a:hover .rings-collection-hover-content {
+    transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    opacity: 1;
+  }
+}
+@media (min-width: 1240px) {
+  .rings-collection {
+    flex: 1 0 21%; 
+    max-width: 25%;
+  }
+}
+
+body.template-index {
+  .shopify-section--image-with-text {
+    .section {
+      width: 100%;
+      .container {
+        margin: 0 !important;
+        .image-with-text__column {
+          margin: 0;
+          width: 50%;
+          @media (max-width: 798px){
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+li.localization-wrap::marker {
+  display: none;
+  content: '';
+}
+/* 
+.header--wrap {
+  @media (min-width: 798px){
+    &.ik--sticky {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      transition: transform .3s;
+      transform: translateY(-100%);
+    }
+    &.is--stiky {
+      transform: translateY(0);
+    }
+  }
+}
+.main-nav__wrapper.sticky_nav.sticky_nav--stick {
+  @media (min-width: 798px){
+    display: none;
+  }
+} */

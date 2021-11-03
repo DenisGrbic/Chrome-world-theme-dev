@@ -83,7 +83,7 @@ End jQuery Fixed Header
 
 $(document).ready(function() {
   console.log("Document ready");
-  // $("body.index header .search-enabled--true").fixedHeader();
+  // $(".header.header-fixed--false").fixedHeader();
   $(".shopify-section--video .plyr--video").each(function(){
     // $(this).find("video").trigger("click")
   });

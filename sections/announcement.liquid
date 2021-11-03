@@ -1,0 +1,29 @@
+{% if section.settings.promo_text != blank %}
+  <div class="promo-banner">
+    <div class="promo-banner__content">
+      {{ section.settings.promo_text }}
+    </div>
+    <div class="promo-banner__close"></div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Header",
+  "class": "shopify-section--header",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Announcement bar"
+    },
+    {
+      "type": "richtext",
+      "id": "promo_text",
+      "label": "Text",
+      "info": "Maximum character limit is 170",
+      "default": "<p>LOWEST PRICE GUARANTEED | 100% AUTHENTIC | FREE GLOBAL EXPRESS SHIPPING | FREE RETURNS</p>"
+    }
+  ]
+}
+
+{% endschema %}
