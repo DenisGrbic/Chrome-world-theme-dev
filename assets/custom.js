@@ -110,14 +110,14 @@ $(document).ready(function() {
     	popupClass += ' sizing-guide-popup';
     }
     
-    var popup = '<aside id="product-popup" data-section-id="popup" data-section-type="product-popup" class="' + popupClass + '">';
+    var popup = '<div class="ik-modal-overlay"></div><aside id="product-popup" data-section-id="popup" data-section-type="product-popup" class="' + popupClass + '">';
     popup += '<button class="cart-popup-close popup-close-button" data-action="close-popup" aria-label="Close"><svg class="Icon Icon--close" role="presentation" viewBox="0 0 16 14"><path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path></svg></button>';
     
     var popupTitle = '';
     var popupContent = '';
     
     if($(this).hasClass('pendants-sizing-guide-button')) {
-      	popupTitle = 'Pendant sizin guide';
+      	popupTitle = 'Pendant sizing guide';
       	popupContent = '<div class="tiffany-sizes-preview-block" id="tiffany-pendant-content"><div class="tiffany-sizes-your-fit-block">   <table>      <tbody><tr>   <th>Chain Length (in)</th>   <th>Chain Length (cm)</th></tr><tr>   <td>16</td>   <td>40</td></tr><tr>   <td>18</td>   <td>45</td></tr><tr>   <td>20</td>   <td>50</td></tr><tr>   <td>22</td>   <td>55</td></tr><tr>   <td>24</td>   <td>60</td></tr><tr>   <td>26</td>   <td>65</td></tr><tr>   <td>28</td>   <td>70</td></tr><tr>   <td>30</td>   <td>75</td></tr><tr>   <td>32</td>   <td>80</td></tr>      </tbody>   </table>   <div class="tiffany-sizes-description">      <h2 class="Heading Heading u-h2">Find Your Fit</h2>      <p>Chrome World uses inches and centimeters to measure pendant chains. Refer to our measurement chart or the ruler found in our size guide.</p>      <a href="https://chromeworld.jp/pages/pendant-sizing-guide" target="_blank" rel="noopener noreferrer"><span>View &amp; download complete guide</span> </a>   </div></div></div>';
     } else if($(this).hasClass('rings-sizing-guide-button')) {
       	popupTitle = 'Ring sizing guide';
@@ -159,6 +159,7 @@ $(document).ready(function() {
       
   $('#ik-modal').on('click', '.popup-close-button', function() {
     $('.chromeworld-popup').fadeOut();
+    $("#ik-modal").html("");
   });
       
   
@@ -173,4 +174,8 @@ $(".Timeline__NavItem").click(function() {
   $(this).addClass("is-selected");
   $(".Timeline__ListItem .Timeline__Item").removeClass("is-selected");
   $(".Timeline__Item[data-index='"+ index +"']").addClass("is-selected");
+});
+
+$(document).on("click", ".ik-modal-overlay", function() {
+  $("#ik-modal").html("");
 });

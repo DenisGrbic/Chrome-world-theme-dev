@@ -857,6 +857,11 @@ Description: Shopify Theme (https://www.shopify.com/&ref=out-of-the-sandbox)
   flex-wrap: wrap;
   padding-top: 40px;
 }
+@media (max-width: 798px) {
+  .shopify-section-wrapper {
+    padding-top: 0;
+  }
+}
 .shopify-section-wrapper .is-width-wide {
   left: 50%;
   margin-left: -50vw;
@@ -4788,7 +4793,7 @@ select.currencies,
 .menu li {
   position: relative;
   vertical-align: top;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 .shopify-currency-form {
@@ -18108,7 +18113,7 @@ html {
 }
 @media only screen and (max-width: 798px) {
   [data-section-type=background-video] .ImageHero .ImageHero__VideoHolder figure {
-    margin-top: -22px;
+    margin-top: -22vw;
     margin-bottom: -22vw;
   }
 }
@@ -18909,7 +18914,7 @@ html {
 }
 
 a[href="/collections/sale"] {
-  color: red;
+  color: red !important;
 }
 
 /**
@@ -18988,24 +18993,112 @@ li.localization-wrap::marker {
   content: "";
 }
 
-/* 
-.header--wrap {
-  @media (min-width: 798px){
-    &.ik--sticky {
-      position: fixed;
-      left: 0;
-      top: 0;
-      z-index: 1;
-      transition: transform .3s;
-      transform: translateY(-100%);
-    }
-    &.is--stiky {
-      transform: translateY(0);
-    }
+#shopify-section-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/*trustpilot custom section settings*/
+#shopify-section-trustpilot {
+  display: none;
+}
+@media screen and (min-width: 641px) {
+  #shopify-section-trustpilot {
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px 10px 7px 13px;
+    text-align: center;
+    max-width: 100px;
+    width: 100px;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px 0 0 4px;
+    border-right: medium;
+    box-shadow: 0 5px 17px -3px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    position: fixed;
+    z-index: 1020;
+    right: 0;
+    transform: translateX(2%);
+    transition: all 0.4s ease-in-out;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+    height: 135px;
+  }
+  #shopify-section-trustpilot:hover {
+    box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.15);
   }
 }
-.main-nav__wrapper.sticky_nav.sticky_nav--stick {
-  @media (min-width: 798px){
+
+#tp-widget-wrapper {
+  font-family: "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+@media screen and (min-width: 641px) {
+  #tp-widget-wrapper {
+    text-align: left;
+  }
+}
+#tp-widget-wrapper .verified-customer-feedback {
+  font-size: 12px;
+}
+#tp-widget-wrapper .reviews-mark {
+  font-size: 12px;
+}
+#tp-widget-wrapper .reviews-mark b {
+  font-size: 14px;
+}
+#tp-widget-wrapper #translations-checkoutourreviews {
+  font-family: "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+#tp-widget-wrapper .tp-stars--4--half .tp-star:nth-of-type(-n+4) .tp-star__canvas, #tp-widget-wrapper .tp-stars--4--half .tp-star:nth-of-type(-n+4) .tp-star__canvas--half {
+  fill: #00b67a;
+}
+#tp-widget-wrapper .tp-stars--4--half .tp-star:nth-of-type(-n+5) .tp-star__canvas--half {
+  fill: #00b67a;
+}
+#tp-widget-wrapper .tp-widget-payoff {
+  width: 70%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 641px) {
+  #tp-widget-wrapper .tp-widget-payoff {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 12px auto;
+    padding-top: 10px;
+  }
+}
+
+.trustpilot-bottom-widget {
+  width: 160px;
+  margin: 30px auto 0;
+}
+@media screen and (min-width: 641px) {
+  .trustpilot-bottom-widget {
     display: none;
   }
-} */
+}
+
+.ik-modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: 9999;
+  opacity: 0.5;
+}
+
+.chromeworld-popup.sizing-guide-popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  bottom: unset;
+}

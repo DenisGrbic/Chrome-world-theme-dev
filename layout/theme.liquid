@@ -52,10 +52,18 @@
 
     <!-- Stylesheet for Fancybox library -->
     {{ 'fancybox.css' | asset_url | stylesheet_tag }}
-
+    
     <!-- Stylesheets for Turbo -->
     {{ 'styles.css' | asset_url | stylesheet_tag }}
-
+    
+    {%- comment -%}
+    <link rel="preload" href="{{'fancybox.css' | asset_url}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{'fancybox.css' | asset_url }}"></noscript>
+    
+    <link rel="preload" href="{{'styles.css' | asset_url}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{'styles.css' | asset_url }}"></noscript>
+    {%- endcomment -%}
+    
     <script>
       window.lazySizesConfig = window.lazySizesConfig || {};
 
@@ -93,11 +101,11 @@
     <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
 
     {% if settings.show_multiple_currencies or settings.show_shipping_calculator %}
-      <script type="text/javascript" src="/services/javascripts/currencies.js" data-no-instant></script>
+      <script type="lazyload2" data-type="text/javascript" src="/services/javascripts/currencies.js" data-no-instant></script>
     {% endif %}
 
     {% if settings.show_multiple_currencies or shop.enabled_currencies.size > 1 %}
-      <script src="{{ 'currencies.js' | asset_url }}" defer></script>
+      <script type="lazyload2" data-src="{{ 'currencies.js' | asset_url }}" defer></script>
     {% endif %}
 
     {% comment %}Inject theme-object begin{% endcomment %}
@@ -138,11 +146,11 @@
       {% render 'js-variables' %}
     </script>
 
-    <script src="{{ 'vendors.js' | asset_url }}" defer></script>
-    <script src="{{ 'sections.js' | asset_url }}" defer></script>
-    <script src="{{ 'utilities.js' | asset_url }}" defer></script>
-    <script src="{{ 'app.js' | asset_url }}" defer></script>
-    <script src="{{ 'custom.js' | asset_url }}" defer></script>
+    <script type="lazyload2" data-src="{{ 'vendors.js' | asset_url }}" defer></script>
+    <script type="lazyload2" data-src="{{ 'sections.js' | asset_url }}" defer></script>
+    <script type="lazyload2" data-src="{{ 'utilities.js' | asset_url }}" defer></script>
+    <script type="lazyload2" data-src="{{ 'app.js' | asset_url }}" defer></script>
+    <script type="lazyload2" data-src="{{ 'custom.js' | asset_url }}" defer></script>
 
     {% if settings.disqus_enabled %}
       {% if template contains "blog" or template contains "article" or template contains "index" %}
@@ -151,7 +159,7 @@
     {% endif %}
 
     {% unless settings.performance == "sport" or template contains "customer" %}
-      <script src="{{ 'instantclick.min.js' | asset_url }}" data-no-instant defer></script>
+      <script type="lazyload2" data-src="{{ 'instantclick.min.js' | asset_url }}" data-no-instant defer></script>
 
       <script data-no-instant>
         window.addEventListener('DOMContentLoaded', function() {
@@ -312,6 +320,7 @@
     {% endif %}
 
     {% section 'footer' %}
+    {% section 'trustpilot' %}
 
     {% if settings.quick_shop_enabled %}
       {% render 'quick-shop' %}
@@ -330,8 +339,8 @@
     <div id="ik-modal"></div>
 
   <!-- Global site tag (gtag.js) - Google Ads: 405636611 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-405636611"></script>
-  <script>
+  <script async type="lazyload2" data-src="https://www.googletagmanager.com/gtag/js?id=AW-405636611"></script>
+  <script type="lazyload2">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -339,9 +348,9 @@
     gtag('config', 'AW-405636611');
   </script>
 
-  <script async type="text/javascript"
-    src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=TSzmiY"></script>
-  <script>
+  <script async type="lazyload2" 
+    data-src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=TSzmiY"></script>
+  <script type="lazyload2">
     var _learnq = _learnq || [];
     if ('{{ customer.email }}') {
       _learnq.push(['identify', {
@@ -350,7 +359,8 @@
     }
   </script>
 
-
+  <link rel="preload" href="{{ 'spd.js' | asset_url }}" as="script">
+  <script type="text/javascript" src="{{ 'spd.js' | asset_url }}" defer="defer"></script>
 
   </body>
 </html>
