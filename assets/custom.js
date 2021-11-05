@@ -179,3 +179,7 @@ $(".Timeline__NavItem").click(function() {
 $(document).on("click", ".ik-modal-overlay", function() {
   $("#ik-modal").html("");
 });
+
+$('.Cart__NoteButton').click(function(){
+  $('.cart-note-hidden-part').slideToggle();
+});

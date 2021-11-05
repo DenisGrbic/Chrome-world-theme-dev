@@ -1,0 +1,111 @@
+{%- capture section_settings -%}
+{
+  "type": {{ settings.cart_type | json }},
+  "itemCount": {{ cart.item_count }},
+  "drawer": false,
+  "hasShippingEstimator": {% if section.settings.show_shipping_estimator and cart.item_count > 0 %}true{% else %}false{% endif %}
+}
+{%- endcapture -%}
+
+<section data-section-id="{{ section.id }}" data-section-type="cart" data-section-settings='{{ section_settings }}'>
+  {%- if cart.item_count == 0 -%}
+    <div class="EmptyState">
+      <div class="Container">
+        <h1 class="EmptyState__Title Heading u-h5">{{ 'cart.general.empty' | t }}</h1>
+
+        <p class="Text--subdued empty-cart-eligible-shipping-text">You are eligible for free shipping!</p>
+
+        <a href="{{ routes.all_products_collection_url }}" class="EmptyState__Action Button Button--primary">{{ 'cart.general.empty_button' | t }}</a>
+      </div>
+    </div>
+  {%- else -%}
+    <div class="Container">
+      <header class="PageHeader">
+        <div class="SectionHeader SectionHeader--center">
+          <h1 class="SectionHeader__Heading Heading u-h1">Cart</h1>
+        </div>
+      </header>
+
+      <div class="PageContent">
+        <form action="{{ routes.cart_url }}" method="POST" class="Cart Cart--expanded" novalidate>
+          <input type="hidden" name="attributes[collection_mobile_items_per_row]" value="">
+          <input type="hidden" name="attributes[collection_desktop_items_per_row]" value="">
+
+          {% render 'cart-items' %}
+
+          <div class="cart-banner">
+            <div class="banner-item"><img src="https://cdn.shopify.com/s/files/1/0430/2779/2040/files/refund.png?v=1603959319" alt="Full refund"><p>Full refund</p></div>
+            <div class="banner-item"><a href="/pages/shipping-policy"><img src="https://cdn.shopify.com/s/files/1/0430/2779/2040/files/airplane.png?v=1603959319" alt="Free global express shipping"><p>Free global express shipping</p></a></div>
+            <div class="banner-item"><img src="https://cdn.shopify.com/s/files/1/0430/2779/2040/files/price_tag.png?v=1603959319" alt="Price match"><p>Lowest Price Guaranteed</p></div>
+            <div class="banner-item"><img src="https://cdn.shopify.com/s/files/1/0430/2779/2040/files/web-certificate.png?v=1603959319" alt="Authenticity guaranteed"><p>Authenticity guaranteed</p></div>
+          </div>
+          <footer class="Cart__Footer">
+            <div class="Cart__NoteContainer">
+              <span class="Cart__NoteButton">Add Order Note</span>
+              <div class="cart-note-hidden-part"><textarea class="Cart__Note Form__Textarea" name="note" id="cart-note" rows="1" placeholder="How can we help you?">{{ cart.note }}</textarea></div>
+            </div>
+
+            <div class="Cart__Recap">
+              {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
+
+              {%- if cart.cart_level_discount_applications != blank -%}
+                {%- for discount_application in cart.cart_level_discount_applications -%}
+                  <p class="Cart__Discount Heading u-h6">{{ 'cart.general.discount' | t }} ({{ discount_application.title }}): -<span data-money-convertible>{{ discount_application.total_allocated_amount | money_without_trailing_zeros }}</span></p>
+                {%- endfor -%}
+              {%- endif -%}
+
+              <p class="Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: <span data-money-convertible>{{ cart.total_price | money_without_trailing_zeros }}</span></p>
+
+              {%- if shipping_and_taxes_notice != blank -%}
+<!--                 <p class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</p> -->
+              {%- endif -%}
+              {%- if settings.cart_show_free_shipping_threshold -%}
+                {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
+
+                <p class="Text--subdued eligible-shipping-text">
+                  {%- if cart.total_price >= threshold_in_cents -%}
+                    <p class="Text--subdued">All customs and taxes prepaid</p>
+                  {%- else -%}
+                    {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money_without_trailing_zeros }}</span>{%- endcapture -%}
+                    {{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}
+                  {%- endif -%}
+                </p>
+              {%- endif -%}
+              <p class="Text--subdued extra-10-code">Use code "EXTRA10" when buying 2 or more items for an extra 10% off</p>
+              <!-- <button type="submit" name="checkout" class="Cart__Checkout Button Button--primary Button--full">{{ 'cart.general.checkout' | t }}</button> -->
+              <button type="submit" name="checkout" class="Cart__Checkout Button Button--primary Button--full">Proceed to checkout</button>
+            </div>
+          </footer>
+        </form>
+      </div>
+    </div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Cart page",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_shipping_estimator",
+      "label": "Show shipping rates calculator",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "shipping_estimator_default_country",
+      "label": "Default country to use",
+      "info": "If your customer is logged-in, the country in his default shipping address will be selected.",
+      "default": "United States"
+    },
+	{
+      "type": "text",
+      "id": "two_or_more_items_in_the_cart_text",
+      "label": "Two or more items in the cart text",
+      "default": "Use code \"EXTRA10\" when buying 2 or more items for an extra 10% off"
+    }
+  ]
+}
+{% endschema %}
