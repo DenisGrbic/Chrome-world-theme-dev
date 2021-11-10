@@ -59,17 +59,12 @@
                 <div class="product-wrap">
                   {% if collection_image != blank %}
                     <div class="image__container"
-                      style="background-image:url({{ collection_image | img_url: '2000x' }})"
                       >
-                      {%- comment -%}
                       {%
                         render 'image-element',
                         image: collection_image.src,
-                        alt: collection_image_alt,
-                        object_fit: section.settings.align_height,
-                        max_height: section.settings.collection_height
+                        alt: collection_image_alt
                       %}
-                      {%- endcomment -%}
                     </div>
                   {% else %}
                     {% capture num %}{% cycle "1", "2", "3", "4", "5", "6" %}{% endcapture %}

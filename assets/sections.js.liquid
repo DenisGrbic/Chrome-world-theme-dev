@@ -1783,6 +1783,7 @@ window.header = {
 
     var closeDropdown = function() {
       $('body').removeClass('is-active');
+      $('body').addClass('promo-banner--show');
       $('.dropdown_link').removeClass('active_link');
       $('.dropdown_container').hide();
       $('.mobile_nav').find('div').removeClass('open');
@@ -1790,6 +1791,7 @@ window.header = {
 
     var closeMiniCart = function() {
       $('body').removeClass('is-active').removeClass('blocked-scroll');
+      $('body').addClass('promo-banner--show');
       $('.dropdown_link').toggleClass('active_link');
       $('.cart-container').removeClass('active_link');
     };
@@ -1945,6 +1947,7 @@ window.header = {
       if (!$(event.target).closest('.dropdown_container').length && $('.dropdown').is(':visible') && !$(event.target).hasClass('url-deadlink') && !$(event.target).hasClass('mega-menu-parent')) {
         $('.is-absolute').parent().addClass('feature_image');
         $('body').removeClass('is-active');
+        $('body').addClass('promo-banner--show');
         closeDropdown();
         if ($openDropdownOnClick.length) {
           $('.dropdown_link').attr('data-click-count', 0);
@@ -2060,6 +2063,7 @@ window.header = {
         if (window.$dropdown.is(':visible') || window.$dropdown.attr('class') === undefined) {
           window.$dropdown.hide();
           $('body').removeClass('is-active');
+          $('body').addClass('promo-banner--show');
         } else {
           $('.dropdown_container').hide();
           if (!$(this).hasClass('cart-container')) {
@@ -2067,6 +2071,7 @@ window.header = {
           }
           window.$dropdown.show();
           $('body').addClass('is-active');
+          $('body').removeClass('promo-banner--show');
         }
 
         if (window.$dropdown.is(':visible')) {
@@ -2157,6 +2162,7 @@ window.header = {
           $('.active_link').removeClass('active_link');
           $('.is-absolute').parent().addClass('feature_image');
           $('body').removeClass('is-active');
+          $('body').addClass('promo-banner--show');
         });
 
         $('.dropdown_link').on('mouseover', function () {

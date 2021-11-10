@@ -213,7 +213,7 @@
 {% comment %}Main navigation{% endcomment %}
 
 <header class="{% if feature_image %}feature_image{% endif %} {% if section.settings.logo_home != blank %}secondary_logo--true{% endif %} search-enabled--{{ section.settings.search_enabled }}">
-  <div class="header {% if feature_image and settings.header_background == false %}is-absolute{% endif %} header-fixed--{{ section.settings.fixed_header }} {% if settings.header_background %}header-background--solid{% endif %}">
+  <div class="header header-fixed--{{ section.settings.fixed_header }} {% if settings.header_background %}header-background--solid{% endif %}">
 
     <div class="top-bar">
       {% if section.settings.social_icons_header %}

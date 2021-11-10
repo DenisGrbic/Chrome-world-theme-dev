@@ -93,6 +93,7 @@ max_height: <number>
         {% endif %}
         data-src="{{ image | img_url: '1600x' }}"
         data-sizes="auto"
+        data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
         data-aspectratio="{{ image.width }}/{{ image.height }}"
         data-srcset="{{ srcset }}"
         height="{{ image.height }}"

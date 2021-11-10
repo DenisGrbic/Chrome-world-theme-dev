@@ -2964,6 +2964,9 @@ a.mini_cart span,
     color: liquid-object("settings.top_bar_color_hover");
   }
 }
+.feature_image .header .top-bar .menu a.icon-user span {
+  color: #000;
+}
 
 .top-bar li {
   padding-left: 10px;
@@ -14662,6 +14665,14 @@ html {
     .product-wrap {
       width: 100%;
       height: 100%;
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     @media (max-width: 640px) {
       width: 100%;
@@ -14926,7 +14937,7 @@ html {
 
 .template-page {
   @media (max-width: 798px) { 
-    padding-top: 70px;
+    /* padding-top: 70px; */
     #pagecontent {
       display: none !important
     }
@@ -15182,7 +15193,7 @@ html {
   }
 }
 
-a[href="/collections/sale"] {
+.main-nav a[href="/collections/sale"] {
   color: red !important;
 }
 
@@ -16008,3 +16019,76 @@ li.localization-wrap::marker {
   }
 }
 /* End Cart Page Customization */
+
+
+/**
+ * ----------------------------------------------------------------------------
+ * Empty state
+ * ----------------------------------------------------------------------------
+ */
+
+ .EmptyState {
+  margin: 140px 0;
+  text-align: center;
+}
+
+.EmptyState__Action {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+@media (min-width: 641px) {
+  .EmptyState {
+    margin: 200px 0;
+  }
+}
+
+@media (min-width: 1240px) {
+  .EmptyState {
+    margin: 250px 0;
+  }
+}
+
+
+.shopify-section--slideshow.under-menu {
+  margin-top: 0 !important;
+}
+
+.homepage-slideshow {
+  .global-button {
+    color: #FFF;
+    background: #e32c2b;
+    border: none;
+    padding: 17px 35px;
+    font-size: 16px;
+  }
+  .image-element__wrap {
+    @include respond-to($medium-up) {
+      img {
+        height: calc(100vh - 330px);
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+
+.header.is-absolute {
+  position: relative !important;
+}
+
+.template-page {
+  iframe {
+    display: block;
+    width: 100%;
+  }
+}
+
+.timeline-header {
+  margin: 40px auto;
+  margin-bottom: 20px;
+  @media (max-width: 789px){
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
