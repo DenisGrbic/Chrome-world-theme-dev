@@ -5,16 +5,20 @@
       "type": "quickshop",
       "blocks": {
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {}
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {}
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {}
         },
         "form": {
-          "type": "form"
+          "type": "form",
+          "settings": {}
         }
       },
       "block_order": [
@@ -22,7 +26,8 @@
         "price",
         "description",
         "form"
-      ]
+      ],
+      "settings": {}
     }
   },
   "order": [

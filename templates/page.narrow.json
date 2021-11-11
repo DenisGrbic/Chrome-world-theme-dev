@@ -1,7 +1,8 @@
 {
   "sections": {
     "main": {
-      "type": "page-narrow-template"
+      "type": "page-narrow-template",
+      "settings": {}
     }
   },
   "order": [

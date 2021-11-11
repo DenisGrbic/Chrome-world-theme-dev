@@ -1,7 +1,8 @@
 {
   "sections": {
     "main": {
-      "type": "page-no-title-template"
+      "type": "page-no-title-template",
+      "settings": {}
     }
   },
   "order": [

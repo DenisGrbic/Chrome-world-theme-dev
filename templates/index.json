@@ -1,209 +1,89 @@
 {
   "sections": {
-    "image-with-text-overlay-1": {
-      "type": "image-with-text-overlay",
+    "1635357589f15043fe": {
+      "type": "ik-video",
+      "disabled": true,
       "settings": {
-        "image": "",
-        "pretext": "<p>Introducing the</p>",
-        "title": "Turbo Shopify Theme",
-        "subtitle": "<p>From Out of the Sandbox</p>",
-        "caption_background": false,
-        "caption_background_transparency": false,
+        "section_size": "large",
+        "desktop-video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0572\/0257\/3505\/files\/namba_black_hero_video_3.mp4?v=1628160207",
+        "mobile-video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0430\/2779\/2040\/files\/cw_homepage_video_mobile-compressed.mp4?v=1629100059",
+        "button_link": "shopify:\/\/collections\/best-sellers",
+        "button_text": "SHOP BEST SELLERS"
+      }
+    },
+    "1635244936cf23d112": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "wide_display": true,
+        "aspect_ratio": "16:9",
+        "autoplay": true,
+        "autoloop": true,
+        "mute_video": true,
+        "show_controls": false,
+        "video_dark_overlay": false,
+        "iframe_video": "",
+        "html5_video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0572\/0257\/3505\/files\/namba_black_hero_video_3.mp4?v=1628160207",
+        "html5_video_mob": "https:\/\/cdn.shopify.com\/s\/files\/1\/0430\/2779\/2040\/files\/cw_homepage_video_mobile-compressed.mp4?v=1629100059",
+        "image": "shopify:\/\/shop_images\/working-at-night.jpg",
+        "display_text_over_video": true,
+        "preheading": "",
+        "heading": "",
+        "subheading": "",
+        "button1_label": "SHOP BEST SELLERS",
+        "button1_link": "shopify:\/\/collections\/best-sellers",
+        "button1_style": "global-button--banner",
+        "button2_label": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
         "text_position": "center",
         "text_align": "center",
-        "button1": "",
-        "button1_link": "",
-        "button1_highlight": false,
-        "button2": "",
-        "button2_link": "",
-        "button2_highlight": false
+        "caption_content_background": "original",
+        "mobile_image": "shopify:\/\/shop_images\/baby-nursery-crib-design.jpg",
+        "mobile_image_crop": "none",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
       }
     },
-    "featured-text-1": {
-      "type": "featured-text",
-      "settings": {
-        "image": "",
-        "title": "Talk about your brand",
-        "content": "<p>Use this text to share information about your brand with your customers.</p>\r\n<p>Describe a product, share announcements, or welcome customers to your store.</p>",
-        "text_size": "featured_text",
-        "text_alignment": "center",
-        "button_label": "",
-        "button_link": ""
-      }
-    },
-    "featured-promotions-1": {
-      "type": "featured-promotions",
-      "blocks": {
-        "block-1": {
-          "type": "image",
-          "settings": {
-            "image": "",
-            "link": "",
-            "title": "Feature",
-            "text": "<p>Promotion description details.</p>",
-            "button_label": ""
-          }
-        },
-        "block-2": {
-          "type": "image",
-          "settings": {
-            "image": "",
-            "link": "",
-            "title": "Feature",
-            "text": "<p>Promotion description details.</p>",
-            "button_label": ""
-          }
-        },
-        "block-3": {
-          "type": "image",
-          "settings": {
-            "image": "",
-            "link": "",
-            "title": "Feature",
-            "text": "<p>Promotion description details.</p>",
-            "button_label": ""
-          }
-        },
-        "block-4": {
-          "type": "image",
-          "settings": {
-            "image": "",
-            "link": "",
-            "title": "Feature",
-            "text": "<p>Promotion description details.</p>",
-            "button_label": ""
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ],
-      "settings": {
-        "featured_promos_per_row": 4,
-        "featured_promos_grid": "full_width",
-        "featured_links_animation": "fadeInDown",
-        "feature_style": "square",
-        "promo_text_on_image_enabled": true
-      }
-    },
-    "featured-collection-1": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "collection": "",
-        "collection_style": "slider",
-        "products_per": 4,
-        "products_limit": 24
-      }
-    },
-    "slideshow-1": {
+    "16361012262139c533": {
       "type": "slideshow",
       "blocks": {
-        "block-1": {
+        "16361012262139c533-0": {
           "type": "image",
           "settings": {
-            "image": "",
-            "pretext": "",
-            "title": "Turbo Shopify Theme",
+            "image": "shopify:\/\/shop_images\/CHRISTMAS_SALE_BANNER.png",
+            "pretext": "<p>CHRISTMAS SALE<\/p>",
+            "title": "SITEWIDE 25% OFF",
             "subtitle": "",
-            "text_position": "center",
-            "text_align": "center",
-            "caption_background": false,
-            "caption_background_transparency": false,
-            "button1": "Primary Button",
-            "button1_link": "",
-            "button1_highlight": true,
-            "button2": "Secondary Button",
-            "button2_link": "",
-            "button2_highlight": false
-          }
-        },
-        "block-2": {
-          "type": "image",
-          "settings": {
-            "image": "",
-            "pretext": "<p>Short text that precedes the headline</p>",
-            "title": "Your headline here",
-            "subtitle": "<p>This is a short subheading for your slideshow image</p>",
-            "text_position": "center",
-            "text_align": "center",
-            "caption_background": false,
-            "caption_background_transparency": false,
-            "button1": "",
-            "button1_link": "",
-            "button1_highlight": false,
+            "button1": "SHOP CHRISTMAS SALE",
+            "button1_link": "shopify:\/\/collections\/sale",
+            "button1_style": "global-button--banner-text-highlighted",
             "button2": "",
             "button2_link": "",
-            "button2_highlight": false
+            "button2_style": "global-button--banner",
+            "text_position": "center",
+            "text_align": "center",
+            "caption_content_background": "original",
+            "mobile_image": "shopify:\/\/shop_images\/179333472_2887206584924411_2091601585708027799_n.jpg",
+            "mobile_image_crop": "none"
           }
         }
       },
       "block_order": [
-        "block-1",
-        "block-2"
+        "16361012262139c533-0"
       ],
       "settings": {
+        "wide_display": true,
         "slideshow_text_animation": "fadeInDown",
-        "slideshow_animation": "slide"
-      }
-    },
-    "image-text-1": {
-      "type": "image-text",
-      "blocks": {
-        "block-1": {
-          "type": "image",
-          "settings": {
-            "image": "",
-            "title": "Your headline",
-            "text": "<p>Promotion description appears here.</p>",
-            "link": "",
-            "button_label": "View all",
-            "bg_color": "rgba(0,0,0,0)",
-            "text_color": "rgba(0,0,0,0)"
-          }
-        },
-        "block-2": {
-          "type": "image",
-          "settings": {
-            "image": "",
-            "title": "Your headline",
-            "text": "<p>Promotion description appears here.</p>",
-            "link": "",
-            "button_label": "View all",
-            "bg_color": "rgba(0,0,0,0)",
-            "text_color": "rgba(0,0,0,0)"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ],
-      "settings": {
-        "featured_links_per_row": "1",
-        "frontpage_text_align": "left"
-      }
-    },
-    "image-with-text-overlay-2": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "image": "",
-        "pretext": "",
-        "title": "Your Headline",
-        "subtitle": "",
-        "caption_background": false,
-        "caption_background_transparency": false,
-        "text_position": "center",
-        "text_align": "center",
-        "button1": "",
-        "button1_link": "",
-        "button1_highlight": false,
-        "button2": "",
-        "button2_link": "",
-        "button2_highlight": false
+        "slideshow_animation": "fade",
+        "slideshow_speed": 6,
+        "activate_adaptiveHeight": true,
+        "mobile_text_below_image": false,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
       }
     },
     "collection-list-1": {
@@ -212,43 +92,55 @@
         "block-1": {
           "type": "collection",
           "settings": {
-            "feature_collection": "",
-            "image": ""
+            "title": "Rings",
+            "feature_collection": "shopify:\/\/collections\/rings",
+            "link_title": "",
+            "image": "shopify:\/\/shop_images\/chromeheartsonlinestore_1500x_e8b5070a-7957-4040-89cf-88b641d34156.jpg"
           }
         },
         "block-2": {
           "type": "collection",
           "settings": {
-            "feature_collection": "",
-            "image": ""
+            "title": "Earrings",
+            "feature_collection": "shopify:\/\/collections\/earrings",
+            "link_title": "",
+            "image": "shopify:\/\/shop_images\/chromeheartsonline_1500x_b7eb0196-17be-45ef-9c97-203e0c9a5fc7.jpg"
           }
         },
         "block-3": {
           "type": "collection",
           "settings": {
-            "feature_collection": "",
-            "image": ""
+            "title": "PENDANTS",
+            "feature_collection": "shopify:\/\/collections\/pendants",
+            "link_title": "",
+            "image": "shopify:\/\/shop_images\/chromeheartscharm_1500x_8246e3e9-5186-4a59-b593-4b54f99f8176.jpg"
           }
         },
         "block-4": {
           "type": "collection",
           "settings": {
-            "feature_collection": "",
-            "image": ""
+            "title": "BRACELETS",
+            "feature_collection": "shopify:\/\/collections\/bracelets",
+            "link_title": "",
+            "image": "shopify:\/\/shop_images\/chromeheartsbracelet_1500x_b586410a-5441-4132-8100-377b3a65b608.jpg"
           }
         },
         "block-5": {
           "type": "collection",
           "settings": {
-            "feature_collection": "",
-            "image": ""
+            "title": "22K GOLD",
+            "feature_collection": "shopify:\/\/collections\/22k-gold",
+            "link_title": "",
+            "image": "shopify:\/\/shop_images\/13712823_107383033043599_573255749_n_1500x_3fac9d36-b738-4b29-a4c7-8db4937088ca.jpg"
           }
         },
         "block-6": {
           "type": "collection",
           "settings": {
-            "feature_collection": "",
-            "image": ""
+            "title": "ABOUT US",
+            "feature_collection": "shopify:\/\/pages\/about-us",
+            "link_title": "LEARM MORE",
+            "image": "shopify:\/\/shop_images\/Shop_01_black_01_1500x_b88566a8-3d05-4a63-9ccb-83bf041ddc75.jpg"
           }
         }
       },
@@ -261,172 +153,190 @@
         "block-6"
       ],
       "settings": {
-        "title": "Collection list",
-        "frontpage_collections_per_row": 3
+        "title": "Our collection",
+        "align_height": false,
+        "collection_height": 170,
+        "frontpage_collections_per_row": 3,
+        "css_class": "",
+        "custom_css": ""
       }
     },
-    "testimonials-1": {
-      "type": "testimonial",
+    "1636485257ec6c30ba": {
+      "type": "custom-html",
+      "settings": {
+        "custom_html": "<h2 class=\"title center\">\nCelebrated by many\n<\/h2>\n<div class=\"feature_divider\"><\/div>",
+        "css_class": "timeline-header",
+        "custom_css": ""
+      }
+    },
+    "1635360350d6eb453b": {
+      "type": "ik-timeline",
+      "blocks": {
+        "1635360350d6eb453b-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GettyImages-176685481-1_801a82eb-30b6-4c00-b878-9fffc5ef41c5.jpg",
+            "apply_overlay": true,
+            "title": "THE ROLLING STONES",
+            "subheading": "LEGACY",
+            "heading": "THE ROLLING STONES",
+            "content": "<p>The Rolling Stones were one of the very first bands to rep Chrome Hearts back in the 90s, which launched the brand into stardom. The rest is history.<\/p>"
+          }
+        },
+        "1635360350d6eb453b-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/160406-guns-and-roses-1980s-08_1.jpg",
+            "apply_overlay": true,
+            "title": "GUNS N' ROSES",
+            "subheading": "LEGACY",
+            "heading": "GUNS N' ROSES",
+            "content": "<p>Just like the Rolling Stones, Guns n' Roses championed the brand back in it's golden heyday.<\/p>"
+          }
+        },
+        "1635360350d6eb453b-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/travis_scott.jpg",
+            "apply_overlay": true,
+            "title": "TRAVI$ SCOTT",
+            "subheading": "NOTABLE",
+            "heading": "TRAVI$ SCOTT",
+            "content": "<p>One of the most influential American rappers today - both in terms of music and fashion - is also a hardcore fan of Chrome Hearts.<\/p>"
+          }
+        },
+        "1c4d0cf1-c9e6-4936-8ea1-d2810ad2a768": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16281572755815127_cd4d0d24-8b7a-4790-b7f1-b1893cb2f303.jpg",
+            "apply_overlay": true,
+            "title": "RIHANNA",
+            "subheading": "NOTABLE",
+            "heading": "RIHANNA",
+            "content": "<p>Nothing captures the Chrome Hearts aesthetic like this all-white fit by Riri. <\/p>"
+          }
+        },
+        "20235297-680f-46ef-9c05-2f33ab306af7": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/drake_rolls_royce.jpg",
+            "apply_overlay": true,
+            "title": "DRAKE",
+            "subheading": "NOTABLE",
+            "heading": "DRAKE'S ROLLS-ROYCE",
+            "content": "<p>Drake's fully custom, one of a kind Chrome Hearts Rolls-Royce is the epitome of ultimate luxury. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1635360350d6eb453b-0",
+        "1635360350d6eb453b-1",
+        "1635360350d6eb453b-2",
+        "1c4d0cf1-c9e6-4936-8ea1-d2810ad2a768",
+        "20235297-680f-46ef-9c05-2f33ab306af7"
+      ],
+      "settings": {
+        "text_color": "#ffffff"
+      }
+    },
+    "image-text-1": {
+      "type": "image-text",
       "blocks": {
         "block-1": {
           "type": "image",
           "settings": {
-            "image": "",
-            "enable_image": true,
-            "title": "Customer Testimonial",
-            "testimonial": "<p>Include some of your favorite customer quotes and feedback here as social proof, to build credibility and trust for your services and products.</p>",
-            "name": "",
-            "store_name": "",
+            "image": "shopify:\/\/shop_images\/buychromeheartsringsonline.jpg",
+            "image_crop": "none",
+            "subtitle": "CHROME HEARTS IS",
+            "title": "TIMELESS AMERICANA",
+            "text": "<p>Rock 'n' roll and motorcycle culture never go out of style.<\/p>",
+            "button_label": "",
             "link": "",
-            "text_position": "center",
-            "text_align": "center",
-            "darken_bg": false
+            "bg_color": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)"
           }
         },
         "block-2": {
           "type": "image",
           "settings": {
-            "image": "",
-            "enable_image": true,
-            "title": "Customer Testimonial",
-            "testimonial": "<p>Include some of your favorite customer quotes and feedback here as social proof, to build credibility and trust for your services and products.</p>",
-            "name": "",
-            "store_name": "",
+            "image": "shopify:\/\/shop_images\/DlKvf8UWwAYO4N8.jpg",
+            "image_crop": "none",
+            "subtitle": "CHROME HEARTS IS",
+            "title": "NOTORIOUS",
+            "text": "<p>Luxury has a place in everyone's heart, particularly in the most rebellious parts.<\/p>",
+            "button_label": "",
             "link": "",
-            "text_position": "center",
-            "text_align": "center",
-            "darken_bg": false
+            "bg_color": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)"
           }
         },
-        "block-3": {
+        "6760f553-193a-450f-9551-1a69c3008418": {
           "type": "image",
           "settings": {
-            "image": "",
-            "enable_image": true,
-            "title": "Customer Testimonial",
-            "testimonial": "<p>Include some of your favorite customer quotes and feedback here as social proof, to build credibility and trust for your services and products.</p>",
-            "name": "",
-            "store_name": "",
+            "image": "shopify:\/\/shop_images\/60367439_762644467464232_4469939272928074534_n_1000x_268c7d5c-5997-48b0-814e-331d5a9deccf.jpg",
+            "image_crop": "none",
+            "subtitle": "CHROME HEARTS IS",
+            "title": "DEVIL-MAY-CARE",
+            "text": "<p>We don't follow the rules of fashion.<\/p>",
+            "button_label": "",
             "link": "",
-            "text_position": "center",
-            "text_align": "center",
-            "darken_bg": false
+            "bg_color": "",
+            "text_color": ""
+          }
+        },
+        "b90731ec-4209-4bfa-bc1d-561f62532c65": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stark_1.png",
+            "image_crop": "none",
+            "subtitle": "CHROME HEARTS IS",
+            "title": "ANTI-FASHION",
+            "text": "<p>\"Fuckin' label it whatever you want. I just call Chrome Hearts, 'Chrome Hearts.' If you have to tell somebody what you are - you aren't.\" - Richard Stark.<\/p>",
+            "button_label": "",
+            "link": "",
+            "bg_color": "",
+            "text_color": ""
+          }
+        },
+        "5ecb1aad-723e-456b-9e53-a56abaee88a4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16281572755815127_1_5e8f2260-ec67-42a8-bf94-e98f4a2cc3c0.jpg",
+            "image_crop": "none",
+            "subtitle": "CHROME HEARTS IS",
+            "title": "FEARLESS",
+            "text": "<p>Wear whatever you want, whenever you want.<\/p>",
+            "button_label": "",
+            "link": "",
+            "bg_color": "",
+            "text_color": ""
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "6760f553-193a-450f-9551-1a69c3008418",
+        "b90731ec-4209-4bfa-bc1d-561f62532c65",
+        "5ecb1aad-723e-456b-9e53-a56abaee88a4"
       ],
       "settings": {
-        "testimonial_text_animation": "fadeInDown"
-      }
-    },
-    "featured-product-1": {
-      "type": "featured-product",
-      "blocks": {
-        "title": {
-          "type": "title"
-        },
-        "price": {
-          "type": "price"
-        },
-        "description": {
-          "type": "description"
-        },
-        "form": {
-          "type": "form"
-        }
-      },
-      "block_order": [
-        "title",
-        "price",
-        "description",
-        "form"
-      ],
-      "settings": {
-        "gallery_arrows": true,
-        "activate_zoom": false,
-        "activate_autoplay": false,
-        "media_position": "is-flex-row",
-        "slideshow_animation": "slide",
-        "display_vendor": false,
-        "frontpage_display_description": true,
-        "product_description_position": "top"
-      }
-    },
-    "featured-product-2": {
-      "type": "featured-product",
-      "blocks": {
-        "title": {
-          "type": "title"
-        },
-        "price": {
-          "type": "price"
-        },
-        "description": {
-          "type": "description"
-        },
-        "form": {
-          "type": "form"
-        }
-      },
-      "block_order": [
-        "title",
-        "price",
-        "description",
-        "form"
-      ],
-      "settings": {
-        "gallery_arrows": true,
-        "activate_zoom": false,
-        "activate_autoplay": false,
-        "media_position": "is-flex-row-reverse",
-        "slideshow_animation": "slide",
-        "display_vendor": false,
-        "frontpage_display_description": true,
-        "product_description_position": "top"
-      }
-    },
-    "newsletter-1": {
-      "type": "newsletter",
-      "settings": {
-        "newsletter_title": "Subscribe",
-        "newsletter_text": "<p>Sign up to get the latest on sales, new releases and more &hellip;</p>",
-        "display_first_name": false,
-        "display_last_name": false,
-        "newsletter_section_text_align": "center",
-        "image": ""
-      }
-    },
-    "blog-posts-1": {
-      "type": "blog-posts",
-      "settings": {
-        "title": "Blog posts",
-        "blog_widget_select": "",
-        "home_page_articles": 3,
-        "blog_tags": false,
-        "blog_author": false,
-        "blog_date": true,
-        "blog_comment_count": true,
-        "read_more_link": true
+        "wide_display": false,
+        "featured_links_per_row": "1",
+        "frontpage_text_align": "left",
+        "frontpage_image_position": "row-reverse",
+        "css_class": "",
+        "custom_css": ""
       }
     }
   },
   "order": [
-    "image-with-text-overlay-1",
-    "featured-text-1",
-    "featured-promotions-1",
-    "featured-collection-1",
-    "slideshow-1",
-    "image-text-1",
-    "image-with-text-overlay-2",
+    "1635357589f15043fe",
+    "1635244936cf23d112",
+    "16361012262139c533",
     "collection-list-1",
-    "testimonials-1",
-    "featured-product-1",
-    "featured-product-2",
-    "newsletter-1",
-    "blog-posts-1"
+    "1636485257ec6c30ba",
+    "1635360350d6eb453b",
+    "image-text-1"
   ]
 }

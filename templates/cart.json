@@ -1,10 +1,12 @@
 {
   "sections": {
     "main": {
-      "type": "cart-template2"
+      "type": "cart-template2",
+      "settings": {}
     },
     "recently-viewed": {
-      "type": "recently-viewed"
+      "type": "recently-viewed",
+      "settings": {}
     }
   },
   "order": [

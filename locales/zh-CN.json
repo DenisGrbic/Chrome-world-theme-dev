@@ -5,8 +5,8 @@
       "out_of_stock": "缺货",
       "view_store_info": "查看店铺信息",
       "check_other_stores": "查看其他商店的空房情况",
-      "available_for_pick_up_at_html": "可在<b>{{ location_name }}</b>取件",
-      "unavailable_for_pick_up_at_html": "目前在<b>{{ location_name }}</b>不可用的取件",
+      "available_for_pick_up_at_html": "可在<b>{{ location_name }}<\/b>取件",
+      "unavailable_for_pick_up_at_html": "目前在<b>{{ location_name }}<\/b>不可用的取件",
       "available_for_pick_up_at_time_html": "提供接送服务，{{ pick_up_time }}",
       "unavailable_for_pick_up_at_time_html": "取件目前不可用",
       "kilometers": "km",
@@ -16,7 +16,7 @@
   "product": {
     "price": {
       "range_html": "{{ price_min }} - {{ price_max }}",
-      "unit_pricing_html": "{{ unit_quantity }} | {{ unit_price }} / {{ unit_measurement}}"
+      "unit_pricing_html": "{{ unit_quantity }} | {{ unit_price }} \/ {{ unit_measurement}}"
     },
     "badge": {
       "sale_percentage_range_html": "保存到{{ price_percent }}％",
@@ -32,7 +32,7 @@
     "404": {
       "title": "找不到页面",
       "subtext": "抱歉，我们找不到你要求的页面",
-      "continue_shopping_html": "试试看其他搜寻或<a href=\"/collections/all\">继续购物</a>"
+      "continue_shopping_html": "试试看其他搜寻或<a href=\"\/collections\/all\">继续购物<\/a>"
     },
     "meta": {
       "tagged_html": "标签语法",
@@ -51,7 +51,7 @@
       "signup_form_success": "提交成功! 我们即将在开幕前寄邮件给您",
       "admin_link_html": "你是店主吗?",
       "password_link": "输入密码",
-      "powered_by_shopify_html": "此网页使用<a href=\"https://www.shopify.com/&ref=out-of-the-sandbox\" target=\"_blank\" rel=\"nofollow\">Shopify</a>系统"
+      "powered_by_shopify_html": "此网页使用<a href=\"https:\/\/www.shopify.com\/&ref=out-of-the-sandbox\" target=\"_blank\" rel=\"nofollow\">Shopify<\/a>系统"
     },
     "forms": {
       "post_error": "表单填写有误请重新填写",
@@ -117,7 +117,7 @@
       "next_article_html": "下一篇文章",
       "tags": "标签",
       "author": "作者",
-      "comment_meta_html": "<strong>{{ author }}</strong>于<strong><time datetime=\"{{ date }}\">{{ date }}</time></strong>",
+      "comment_meta_html": "<strong>{{ author }}<\/strong>于<strong><time datetime=\"{{ date }}\">{{ date }}<\/time><\/strong>",
       "read_time": "读"
     },
     "counts": {
@@ -220,7 +220,7 @@
     },
     "item": {
       "price": {
-        "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}"
+        "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}"
       }
     }
   },
@@ -400,9 +400,9 @@
       "continue_shopping_link_html": "继续购物！",
       "excluding_tax_shipping": "不包含税金和邮资",
       "tax_and_shipping": "结账时计算的税金和运费",
-      "taxes_and_shipping_policy_at_checkout_html": "结账时计算的税金和<a href=\"{{ link }}\">运费</a>",
+      "taxes_and_shipping_policy_at_checkout_html": "结账时计算的税金和<a href=\"{{ link }}\">运费<\/a>",
       "taxes_included_but_shipping_at_checkout": "结账时计算的税金（包含）和运费",
-      "taxes_included_and_shipping_policy_html": "税金（包含）。结账时计算的<a href=\"{{ link }}\">运费</a>。",
+      "taxes_included_and_shipping_policy_html": "税金（包含）。结账时计算的<a href=\"{{ link }}\">运费<\/a>。",
       "orders_processed_in_currency_html": "订单将以{{ currency }}计算。",
       "note": "订单备注",
       "agree_to_terms_html": "我同意所有交易条款",
@@ -419,7 +419,7 @@
     "shipping_calculator": {
       "estimated_shipping": "预估邮资",
       "country": "国家",
-      "province": "省 / 州",
+      "province": "省 \/ 州",
       "zip_code": "邮递区号",
       "heading": "邮资计算机",
       "submit_button_label": "计算邮资",
@@ -447,7 +447,7 @@
       "pick_a_currency": "选择币别",
       "social": "关注",
       "close_window": "关闭",
-      "designer_credits_html": "<a href=\"http://outofthesandbox.com/\" target=\"_blank\" title=\"Turbo Shopify Theme by Out of the Sandbox\">网页设计 Out of the Sandbox</a>."
+      "designer_credits_html": "<a href=\"http:\/\/outofthesandbox.com\/\" target=\"_blank\" title=\"Turbo Shopify Theme by Out of the Sandbox\">网页设计 Out of the Sandbox<\/a>."
     },
     "social_sharing": {
       "title": "分享",
@@ -663,7 +663,7 @@
         "ends_with_label": "后码数为{{ last_digits }}",
         "same_billing_address_label": "于邮寄地址相同",
         "different_billing_address_label": "用一个不同的账单地址",
-        "free_order_notice_html": "您的订单是<strong>免费的</strong>。不需支付任何款项",
+        "free_order_notice_html": "您的订单是<strong>免费的<\/strong>。不需支付任何款项",
         "offsite_gateway_redirect_hint": "您将会被引导至{{ gateway_label }} 以安全完成付款。",
         "billing_address_title": "账单地址",
         "order_covered_by_gift_cards_notice": {
@@ -673,7 +673,7 @@
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "目前余额",
-        "credit_card_expires_on_notice": "信用卡有效日期{{ month }}/{{ year }}\n",
+        "credit_card_expires_on_notice": "信用卡有效日期{{ month }}\/{{ year }}\n",
         "express_payment_gateway_label": "快速结帐",
         "manual_payment_gateway_label": "手动结账",
         "billing_address_title": "账单地址",
@@ -865,7 +865,7 @@
         "cancel_reason": {
           "inventory": "商品无法购买",
           "fraud": "欺诈性订单",
-          "customer": "顾客更改/取消订单",
+          "customer": "顾客更改\/取消订单",
           "other": "其它原因"
         }
       },
@@ -879,7 +879,7 @@
         "too_many_line_items_error": "您的购物车无法超过 {{ max }} 个商品",
         "link_expired": "链接失效",
         "link_no_longer_exists": "链接已不存在",
-        "stock_problems_html": "一或更多商品已经不再贩售, 我们提供了<a href='{{ link }}'>已更新的购物车</a>.",
+        "stock_problems_html": "一或更多商品已经不再贩售, 我们提供了<a href='{{ link }}'>已更新的购物车<\/a>.",
         "changed": "购物车更新",
         "items_changed": "一或更多商品已更新",
         "product_sold_out": "'{{ name }}'已售完",
@@ -1030,7 +1030,7 @@
       "invalid_format": "格式有误",
       "expired": "已失效",
       "invalid_start_date_or_issue_number_for_debit": "请输入有效的日期或发行序号",
-      "reset_password_html": "此信箱已被注册，如果这是您的信箱，您可以 <a href=\"/account/login#recover\">更新密码</a>",
+      "reset_password_html": "此信箱已被注册，如果这是您的信箱，您可以 <a href=\"\/account\/login#recover\">更新密码<\/a>",
       "verify_email": "我们已经寄出一封邮件至"
     }
   }

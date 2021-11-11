@@ -5,8 +5,8 @@
       "out_of_stock": "En rupture de stock",
       "view_store_info": "Afficher les informations du magasin",
       "check_other_stores": "Vérifier la disponibilité dans d'autres magasins",
-      "available_for_pick_up_at_html": "Prise en charge disponible à <b>{{ location_name }}</b>",
-      "unavailable_for_pick_up_at_html": "Prise en charge actuellement indisponible à <b>{{ location_name }}</b>",
+      "available_for_pick_up_at_html": "Prise en charge disponible à <b>{{ location_name }}<\/b>",
+      "unavailable_for_pick_up_at_html": "Prise en charge actuellement indisponible à <b>{{ location_name }}<\/b>",
       "available_for_pick_up_at_time_html": "Ramassage disponible, {{ pick_up_time }}",
       "unavailable_for_pick_up_at_time_html": "Ramassage actuellement indisponible",
       "kilometers": "km",
@@ -16,7 +16,7 @@
   "product": {
     "price": {
       "range_html": "{{ price_min }} - {{ price_max }}",
-      "unit_pricing_html": "{{ unit_quantity }} | {{ unit_price }} / {{ unit_measurement}}"
+      "unit_pricing_html": "{{ unit_quantity }} | {{ unit_price }} \/ {{ unit_measurement}}"
     },
     "badge": {
       "sale_percentage_range_html": "Économiser jusqu'à {{ price_percent }}%",
@@ -35,7 +35,7 @@
     "404": {
       "title": "Page introuvable",
       "subtext": "Nous sommes désolés, la page que vous avez demandée n'existe pas.",
-      "continue_shopping_html": "Essayez de faire une recherche ou <a href=\"/collections/all\">poursuivez vos achats →</a>"
+      "continue_shopping_html": "Essayez de faire une recherche ou <a href=\"\/collections\/all\">poursuivez vos achats →<\/a>"
     },
     "password_page": {
       "opening_soon": "Bientôt ouvert",
@@ -48,9 +48,9 @@
       "login_form_submit": "Entrer",
       "signup_form_submit": "Soumettre",
       "signup_form_success": "Nous vous enverrons un e-mail à droite avant d'ouvrir!",
-      "admin_link_html": "Êtes-vous le propriétaire de la boutique? <a href=\"/admin\" class=\"text-link\">Connectez-vous ici</a>.",
+      "admin_link_html": "Êtes-vous le propriétaire de la boutique? <a href=\"\/admin\" class=\"text-link\">Connectez-vous ici<\/a>.",
       "password_link": "Entrer avec un mot de passe",
-      "powered_by_shopify_html": "Cette boutique sera propulsée <a href=\"https://www.shopify.com/&ref=out-of-the-sandbox\" target=\"_blank\" rel=\"nofollow\">Shopify</a>"
+      "powered_by_shopify_html": "Cette boutique sera propulsée <a href=\"https:\/\/www.shopify.com\/&ref=out-of-the-sandbox\" target=\"_blank\" rel=\"nofollow\">Shopify<\/a>"
     },
     "meta": {
       "tagged_html": "Étiqueté \"{{ tags }}\"",
@@ -58,7 +58,7 @@
     },
     "forms": {
       "post_error": "Certains champs n'ont pas été remplis correctement",
-      "post_field_error_html": "Le <strong>{{ field }}</strong> {{ error }}"
+      "post_field_error_html": "Le <strong>{{ field }}<\/strong> {{ error }}"
     },
     "newsletter_form": {
       "title": "Nouveautés et mises à jour",
@@ -120,7 +120,7 @@
       "next_article_html": "Suivant →",
       "tags": "Labels",
       "author": "Auteur",
-      "comment_meta_html": "<strong>{{ author }}</strong> le <strong><time datetime=\"{{ date }}\">{{ date }}</time></strong>",
+      "comment_meta_html": "<strong>{{ author }}<\/strong> le <strong><time datetime=\"{{ date }}\">{{ date }}<\/time><\/strong>",
       "read_time": "lire la lecture"
     },
     "counts": {
@@ -222,7 +222,7 @@
     },
     "item": {
       "price": {
-        "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}"
+        "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}"
       }
     }
   },
@@ -402,9 +402,9 @@
       "continue_shopping_link_html": "Poursuivre vos achats→",
       "excluding_tax_shipping": "Taxe et frais de livraison non compris",
       "tax_and_shipping": "Taxes et frais de port calculés à l'étape de paiement",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\">frais de port</a> calculés à l'étape de paiement",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\">frais de port<\/a> calculés à l'étape de paiement",
       "taxes_included_but_shipping_at_checkout": "Taxes incluses et frais de port calculés à l'étape de paiement",
-      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\">Frais de port</a> calculés à l'étape de paiement.",
+      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\">Frais de port<\/a> calculés à l'étape de paiement.",
       "orders_processed_in_currency_html": "Les commandes seront facturées en {{ currency }}.",
       "note": "Commentaire",
       "agree_to_terms_html": "Je suis d'accord avec les Conditions",
@@ -421,7 +421,7 @@
     "shipping_calculator": {
       "estimated_shipping": "estimation des frais de livraison",
       "country": "Pays",
-      "province": "Province / Etat",
+      "province": "Province \/ Etat",
       "zip_code": "Code postal",
       "heading": "Calculateur de frais de livraison",
       "submit_button_label": "Calculer les frais de livraison",
@@ -449,7 +449,7 @@
       "pick_a_currency": "Choisissez une devise",
       "social": "Partage",
       "close_window": "Fermer",
-      "designer_credits_html": "<a href=\"http://outofthesandbox.com/\" target=\"_blank\" title=\"Turbo Shopify Theme by Out of the Sandbox\">Conçu par Out of the Sandbox</a>."
+      "designer_credits_html": "<a href=\"http:\/\/outofthesandbox.com\/\" target=\"_blank\" title=\"Turbo Shopify Theme by Out of the Sandbox\">Conçu par Out of the Sandbox<\/a>."
     },
     "social_sharing": {
       "title": "Partager",

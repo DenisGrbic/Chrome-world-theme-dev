@@ -4,34 +4,44 @@
       "type": "page-gallery-template",
       "blocks": {
         "block-1": {
-          "type": "image"
+          "type": "image",
+          "settings": {}
         },
         "block-2": {
-          "type": "image"
+          "type": "image",
+          "settings": {}
         },
         "block-3": {
-          "type": "image"
+          "type": "image",
+          "settings": {}
         },
         "block-4": {
-          "type": "image"
+          "type": "image",
+          "settings": {}
         },
         "block-5": {
-          "type": "image"
+          "type": "image",
+          "settings": {}
         },
         "block-6": {
-          "type": "image"
+          "type": "image",
+          "settings": {}
         },
         "block-7": {
-          "type": "image"
+          "type": "image",
+          "settings": {}
         },
         "block-8": {
-          "type": "image"
+          "type": "image",
+          "settings": {}
         },
         "block-9": {
-          "type": "image"
+          "type": "image",
+          "settings": {}
         },
         "block-10": {
-          "type": "image"
+          "type": "image",
+          "settings": {}
         }
       },
       "block_order": [
@@ -45,7 +55,8 @@
         "block-8",
         "block-9",
         "block-10"
-      ]
+      ],
+      "settings": {}
     }
   },
   "order": [

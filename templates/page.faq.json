@@ -2,81 +2,355 @@
   "sections": {
     "main": {
       "type": "page-faq-template",
-      "settings": {
-        "title": "Page FAQ Template",
-        "subtitle": "<p>Create an amazing FAQ page with a full-width banner</p>",
-        "text_position": "center",
-        "text_align": "center"
-      },
       "blocks": {
-        "block-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Section"
-          }
-        },
         "block-2": {
           "type": "Content",
           "settings": {
-            "title": "Title",
-            "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.</p>"
+            "title": "How do I place an order?",
+            "subtitle": "<p>To place your order, select the item(s) that you wish to purchase and add it to your shopping cart. Then, proceed to the checkout page where you must fill in your personal information and pay for the order. Make sure to double check that you have filled in your details correctly to ensure that you receive all the necessary info and that your order is delivered without any complications.<\/p><p>If you need any help, we strongly advise you to speak to one of our Customer Service Representatives by sending us a message on our Contact Us page.<\/p>"
           }
         },
         "block-3": {
           "type": "Content",
           "settings": {
-            "title": "Title",
-            "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.</p>"
+            "title": "Was my order successful?",
+            "subtitle": "<p>We have several verification stages when customers place an order, this is done to provide our customers with the highest level of security.<\/p><p>If your order is successful, you should within the next 10 minutes receive an order confirmation via the e-mail address provided by you at the checkout page. If not, please contact us and we can assist you in this matter.<\/p>"
           }
         },
         "block-4": {
           "type": "Content",
           "settings": {
-            "title": "Title",
-            "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.</p>"
-          }
-        },
-        "block-5": {
-          "type": "heading",
-          "settings": {
-            "heading": "Section"
+            "title": "How do I cancel my order?",
+            "subtitle": "<p>In the event you wish to cancel your order, please contact us.  <\/p><p>Upon receiving your cancellation request, we will reach out to our carrier service and request that the package be rerouted back to our warehouse. Once we receive the returned package, we will process the order, issue a full refund to your account, and notify you via email.<\/p><p>Kindly note that at this time we are unable to cancel orders before they are shipped.<\/p>"
           }
         },
         "block-6": {
           "type": "Content",
           "settings": {
-            "title": "Title",
-            "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.</p>"
+            "title": "Can I change my order?",
+            "subtitle": "<p>Once an order is submitted, we are unable to change the ordered products or the quantity selected.<\/p><p>In this situation, we suggest you contact us and cancel the incorrect order.<\/p><p>Thereafter, we recommend you place a new order for your desired item(s) on our website at your own convenience.<\/p>"
           }
         },
         "block-7": {
           "type": "Content",
           "settings": {
-            "title": "Title",
-            "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.</p>"
+            "title": "Can I change my delivery address?",
+            "subtitle": "<p>If you wish to change your delivery address, please contact us and we will do our best to assist you in this matter. <br\/><br\/>In the event that we are unable to process the address change directly in our system, usually because the package has already been shipped, we will need to contact our courier to request a change of delivery address.<br\/><br\/>In order to help you further, we would really appreciate if you could provide us with the following information :<br\/><br\/>- First and Last name,<br\/><br\/>- Company name (if needed),<br\/><br\/>- Street name and number,<br\/><br\/>- Zip code and City,<br\/><br\/>- Country,<br\/><br\/>- Phone number and Email Address.<\/p>"
           }
         },
         "block-8": {
           "type": "Content",
           "settings": {
-            "title": "Title",
-            "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.</p>"
+            "title": "From where are your products shipped?",
+            "subtitle": "<p>All of our products are shipped from Japan.<\/p>"
+          }
+        },
+        "adef36e7-2ac8-494a-9111-eb88b9b779c8": {
+          "type": "Content",
+          "settings": {
+            "title": "Do you ship overseas?",
+            "subtitle": "<p>Yes, we ship all over the world (except the countries listed below). Tax will vary depending on country, and will be added at checkout.<br\/><br\/>- Argentina<br\/><br\/>- Bouvet Island<br\/><br\/>- Christmas Island<br\/><br\/>- Crimea<br\/><br\/>- Cuba<br\/><br\/>- Heard Island<br\/><br\/>- Iran<br\/><br\/>- Libya<br\/><br\/>- McDonald Island<br\/><br\/>- North Korea<br\/><br\/>- Palestine<br\/><br\/>- Somalia<br\/><br\/>- Sudan<br\/><br\/>- Syria<br\/><br\/>- Turkmenistan<\/p>"
+          }
+        },
+        "b9e53453-2149-4502-8dd0-024d97d9cb3c": {
+          "type": "Content",
+          "settings": {
+            "title": "How long will it take to get my order?",
+            "subtitle": "<p>It depends on where you are. Orders usually take 3-5 business days to arrive after being shipped by the shipping carrier. Delivery details will be provided in your confirmation email.<\/p>"
+          }
+        },
+        "886a8076-abb8-4fc5-a056-97e1d2896e64": {
+          "type": "Content",
+          "settings": {
+            "title": "What shipping carriers do you use?",
+            "subtitle": "<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"
+          }
+        },
+        "bb2ef989-bfbe-4c1e-a69e-fb15ed06b154": {
+          "type": "Content",
+          "settings": {
+            "title": "How do I track my order?",
+            "subtitle": "<p>Within 5-7 business days of placing your order, your package will be scanned at the carrier's sorting facility. You will then receive an e-mail from us containing your package’s tracking information.<\/p>"
+          }
+        },
+        "d61f291c-8f88-4b0f-b991-e84c200eabb9": {
+          "type": "Content",
+          "settings": {
+            "title": "Is shipping free?",
+            "subtitle": "<p>Free global express shipping is provided by Chrome World.<\/p>"
+          }
+        },
+        "9ca8f320-e23a-4e12-820b-d14a667b250c": {
+          "type": "Content",
+          "settings": {
+            "title": "My order is a gift - can you remove the invoice from the package?",
+            "subtitle": "<p>Yes, we can remove the invoice. Simply tell us to remove the invoice during checkout in the Order Notes section.<br\/><br\/>Nevertheless, a certificate of authenticity card is included with all of our orders. This document does not include any pricing information. We ask that you hold onto this card, as the information it contains will help us to look up your order in the event that the order needs to be returned or a warranty claim processed.<\/p>"
+          }
+        },
+        "273be0ef-a790-4545-8756-5ae1e69ff5a6": {
+          "type": "Content",
+          "settings": {
+            "title": "I have received the wrong product\/size - what do I do?",
+            "subtitle": "<p>If you receive your package and it is not what you ordered, please contact us immediately. We will do everything we can to correct our mistake as quickly as possible.<\/p>"
+          }
+        },
+        "e74d75ae-a451-4b73-88c1-251a2e3a36b0": {
+          "type": "Content",
+          "settings": {
+            "title": "Can I pick up my package from a pick-up point?",
+            "subtitle": "<p>Once the carrier has made their first delivery attempt to your address, you can contact the carrier's local office and ask them to deliver your package to your nearest carrier access point. Some may even allow you to arrange for your order to be dropped off at an access point at any time. <br\/><br\/>Your package will be delivered to a secure location where you can pick it up at your own convenience.<\/p>"
+          }
+        },
+        "ef208d32-2c8e-48eb-abe6-d4796515c3c8": {
+          "type": "Content",
+          "settings": {
+            "title": "I haven't received my order yet - what do I do?",
+            "subtitle": "<p>If you have received your Tracking Number, we urge you to contact the carrier's local office near you. The carrier will have more accurate information regarding the status of the delivery.<br\/><br\/>If you have successfully placed your order but not received your Tracking Number, please contact us and we will look into this for you immediately.<\/p>"
+          }
+        },
+        "e3534c63-f3c3-48a2-adc2-1eedbca0dcf7": {
+          "type": "Content",
+          "settings": {
+            "title": "Why have I not received an order confirmation by e-mail?",
+            "subtitle": "<p>Due to high volumes, you may not receive your order confirmation instantly. The order confirmation and\/or your tracking information will be sent out to you via email within the nearest 48 hours. We kindly ask you to wait 48 hours to receive either your order confirmation or your tracking information before contacting us. In the events, you have been debited in your bank account, you can safely know that your order has been successful. We apologize for any confusion and thank you for your patience.<\/p>"
           }
         }
       },
       "block_order": [
-        "block-1",
         "block-2",
         "block-3",
         "block-4",
-        "block-5",
         "block-6",
         "block-7",
-        "block-8"
-      ]
+        "block-8",
+        "adef36e7-2ac8-494a-9111-eb88b9b779c8",
+        "b9e53453-2149-4502-8dd0-024d97d9cb3c",
+        "886a8076-abb8-4fc5-a056-97e1d2896e64",
+        "bb2ef989-bfbe-4c1e-a69e-fb15ed06b154",
+        "d61f291c-8f88-4b0f-b991-e84c200eabb9",
+        "9ca8f320-e23a-4e12-820b-d14a667b250c",
+        "273be0ef-a790-4545-8756-5ae1e69ff5a6",
+        "e74d75ae-a451-4b73-88c1-251a2e3a36b0",
+        "ef208d32-2c8e-48eb-abe6-d4796515c3c8",
+        "e3534c63-f3c3-48a2-adc2-1eedbca0dcf7"
+      ],
+      "settings": {
+        "wide_display": true,
+        "page_title": "Shipping & Delivery",
+        "show_banner": false,
+        "mobile_image_crop": "none",
+        "caption_content_background": "original",
+        "pretext": "<p>asdf<\/p>",
+        "title": "Page FAQ Template",
+        "subtitle": "<p>Create an amazing FAQ page with a full-width banner<\/p>",
+        "text_position": "center",
+        "text_align": "center",
+        "button1": "",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner"
+      }
+    },
+    "16357501790123c662": {
+      "type": "faq",
+      "blocks": {
+        "16357501790123c662-1": {
+          "type": "content",
+          "settings": {
+            "title": "What is your exchange policy?",
+            "answer": "<p>Kindly note that we do not offer a direct exchange service.<br\/><br\/>In the event that the product(s) are the incorrect size or the incorrect product, you are most welcome to send back your purchase for an exchange. Once we receive your product and inspect it, we will send you the product you want. <br\/><br\/>1. Go to our Contact Us page and fill out the form<br\/><br\/>2. Select \"Exchanges\" as the Topic, provide a return reason, and submit your message<br\/><br\/>3. You will receive an email with your exchange instructions.<br\/><br\/>4. Follow the instructions and create your return label<br\/><br\/>5. Return your order to us via any carrier<br\/><br\/>Terms & Conditions:<br\/><br\/>Please note you will need to send back your order within 30 days from receiving it. Chrome World will not accept any returns after this period. Your item must be in the same condition as when you received it.<br\/><br\/>Items marked as 50%-off are Final Sale and will be excluded from our normal return policy, which means they will not be eligible to be returned or exchanged. <\/p>"
+          }
+        },
+        "16357501790123c662-2": {
+          "type": "content",
+          "settings": {
+            "title": "What is your return policy?",
+            "answer": "<p>You have the right to return products purchased directly from www.chromeworld.jp within 14 days* of receiving the item(s) for a full refund. To be eligible for return, product(s) must be either defective or incorrect, and unused – in original packaging with labels - and still in the same, new condition as when received.<br\/><br\/>1. Go to our Contact Us page and fill out the form<br\/><br\/>2. Select \"Returns\" as the Topic, provide a return reason, and submit your message<br\/><br\/>3. You will receive an email with your return instructions.<br\/><br\/>4. Follow the instructions and create your return label<br\/><br\/>5. Return your order to us via any carrier<br\/><br\/>Terms & Conditions:<br\/><br\/>Please note you will need to send back your order within 30 days from receiving it. Chrome World will not accept any returns after this period. Your item must be in the same condition as when you received it.<br\/><br\/>Items marked as 50%-off are Final Sale and will be excluded from our normal return policy, which means they will not be eligible to be returned or exchanged. <\/p>"
+          }
+        },
+        "16357501790123c662-3": {
+          "type": "content",
+          "settings": {
+            "title": "How do I return my order?",
+            "answer": "<p>1. Go to our Contact Us page and fill out the form<br\/><br\/>2. Select \"Return\" as the Topic, provide a return reason, and submit your message<br\/><br\/>3. You will receive an email with your return instructions.<br\/><br\/>4. Follow the instructions and create your return label<br\/><br\/>5. Return your order to us via any carrier<\/p>"
+          }
+        },
+        "16357501790123c662-5": {
+          "type": "content",
+          "settings": {
+            "title": "Have your received my return?",
+            "answer": "<p>Once your returning package has been received at our warehouse, it is processed and inspected before we proceed in approving or disapproving the respective return.<br\/><br\/>We appreciate your understanding that, although we work as quickly as possible, it is possible that this process may take several business days to complete.<br\/><br\/>Kindly observe that Chrome World is not responsible for any items lost during the return shipping if you choose to return the package by yourself. Therefore, we strongly recommend that you return your order using the return label and instructions provided by our customer service. Please contact us on our Contact Us page to receive the necessary details in order to make your return. <\/p>"
+          }
+        },
+        "16357501790123c662-6": {
+          "type": "content",
+          "settings": {
+            "title": "When will I receive my refund?",
+            "answer": "<p>Once your returning package has been received at our warehouse, it is processed and inspected before we proceed in approving or disapproving the respective return. <br\/><br\/>The product(s) must be sent back within 14 days of receiving it. However, it is not an issue if it is received at our warehouse after this period. It must be unused – in its original packaging with labels intact - and still in the same new condition as when the item was received.<br\/><br\/>If your return is approved, a full refund will be issued for your order. Once a refund is issued on our system, you can expect it to be visible in your account within 5-10 business days.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16357501790123c662-1",
+        "16357501790123c662-2",
+        "16357501790123c662-3",
+        "16357501790123c662-5",
+        "16357501790123c662-6"
+      ],
+      "settings": {
+        "title": "Returns & Exchanges"
+      }
+    },
+    "1635750209816095ec": {
+      "type": "faq",
+      "blocks": {
+        "1635750209816095ec-1": {
+          "type": "content",
+          "settings": {
+            "title": "What payment options do you accept?",
+            "answer": "<p>Chrome World accepts American Express, Diners, Discover, Maestro, MasterCard, Visa, as well as various other local debit cards and invoicing options. <br\/><br\/>All available payment options for your area will be displayed at the checkout page once you have entered the country of delivery. <\/p>"
+          }
+        },
+        "1635750209816095ec-2": {
+          "type": "content",
+          "settings": {
+            "title": "What currency is displayed on the website?",
+            "answer": "<p>The product prices featured on our website are displayed in USD.<br\/><br\/>Chrome World is not responsible for any discrepancies in currency values or conversation rates that your bank or credit card company may use when purchasing from our website. Should you have questions concerning this, please contact your bank or credit card company.<\/p>"
+          }
+        },
+        "1635750209816095ec-3": {
+          "type": "content",
+          "settings": {
+            "title": "Is my payment information safe",
+            "answer": "<p>Your transaction and payment details are directly handled by Adyen, our payment service provider, with secure encryption, and under strict banking standards.<br\/><br\/>Your credit card details are sent directly to the bank and cannot be read or accessed by any parties other than your bank – Including Chrome World.<\/p>"
+          }
+        },
+        "1635750209816095ec-5": {
+          "type": "content",
+          "settings": {
+            "title": "Do you store my payment information?",
+            "answer": "<p>Chrome World does not receive or store any payment information. All transactions are handled directly by Adyen, our payment service provider. Your credit card details are sent directly to the bank and cannot be read or accessed by any parties other than your bank.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1635750209816095ec-1",
+        "1635750209816095ec-2",
+        "1635750209816095ec-3",
+        "1635750209816095ec-5"
+      ],
+      "settings": {
+        "title": "Payment & Security"
+      }
+    },
+    "1635750224db4dd160": {
+      "type": "faq",
+      "blocks": {
+        "1635750224db4dd160-1": {
+          "type": "content",
+          "settings": {
+            "title": "How do I know whether my Chrome Hearts product is authentic?",
+            "answer": "<p><br\/>All our Chrome Hearts products are sourced directly from Chrome Hearts. We guarantee the authenticity of our products with our authenticity certificate that is included with every product. Customers may also request for us to send a copy of the commercial invoice we have from Chrome Hearts LLC. Please send an email to contact@chromeworld.jp with your order number and with the subject \"Commercial invoice request\".<\/p>"
+          }
+        },
+        "1635750224db4dd160-2": {
+          "type": "content",
+          "settings": {
+            "title": "What is your silver jewelry made of?",
+            "answer": "<p>All Chrome Hearts silver products are made of sterling silver, meaning they are 92.5% pure silver.<\/p>"
+          }
+        },
+        "1635750224db4dd160-3": {
+          "type": "content",
+          "settings": {
+            "title": "What is your gold jewelry made of?",
+            "answer": "<p>All Chrome Hearts gold products that we sell are made of 22K gold (i.e. 22 karat).<\/p>"
+          }
+        },
+        "1635750224db4dd160-5": {
+          "type": "content",
+          "settings": {
+            "title": "How do I know what size fits me?",
+            "answer": "<p>We offer sizing guides for our different product types (rings, bracelets, earrings, and pendants). Click here for the guides.<\/p>"
+          }
+        },
+        "1635750224db4dd160-6": {
+          "type": "content",
+          "settings": {
+            "title": "Is sterling silver waterproof?",
+            "answer": "<p>Shower water is generally fine - there aren’t any super harsh chemicals in our tap water that would react significantly with your sterling silver jewelry.  The soap and water can even help wash away any residue from your skin and dirt in the air that can also cause your silver to look dull.<br\/><br\/>Pool water is not recommended. Swimming pools are usually treated with chlorine, and chlorine reacts with sterling silver.  So depending on how much chlorine is in the pool, you’ll probably have to clean your silver with a silver polishing cloth if you’re swimming frequently.<br\/><br\/>Hot Tubs are not recommended. There’s even more chlorine in hot tubs, and it’s hot. Chemical reactions generally speed up at higher temperatures, so I’d definitely try to take off your silver before getting in the pool. You might notice a definite color change afterwards that could take a lot of cleaning.<br\/><br\/>Salt Water is not the end of the world. Salt can be corrosive and can also leave residue on your jewelry which should be cleaned off.  If you can, take it off before going in the water. If you forget, try to rinse it and dry it off with some clean water afterwards.<br\/><br\/>Hot Springs are not recommended. Hot springs often contain a lot of different minerals, specifically Sulfur.  Jewelers use Sulfuric acid to intentionally oxidize silver jewelry so you could be in for a big color change here. We advise against wearing your silver jewelry in any kind of hot spring.<br\/><\/p>"
+          }
+        },
+        "1635750224db4dd160-7": {
+          "type": "content",
+          "settings": {
+            "title": "Is 22K gold waterproof?",
+            "answer": "<p>Yes, absolutely.<\/p>"
+          }
+        },
+        "61e54d75-69ec-49f9-ba95-3d8b77709b29": {
+          "type": "content",
+          "settings": {
+            "title": "How do I polish my silver jewelry?",
+            "answer": "<p>Whenever you order silver products from us, we send you a silver polishing cloth for free. Just rub it against the silver to polish it.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1635750224db4dd160-1",
+        "1635750224db4dd160-2",
+        "1635750224db4dd160-3",
+        "1635750224db4dd160-5",
+        "1635750224db4dd160-6",
+        "1635750224db4dd160-7",
+        "61e54d75-69ec-49f9-ba95-3d8b77709b29"
+      ],
+      "settings": {
+        "title": "Product"
+      }
+    },
+    "16357511308a1d48b4": {
+      "type": "faq",
+      "blocks": {
+        "16357511308a1d48b4-1": {
+          "type": "content",
+          "settings": {
+            "title": "How do I use my promotion code?",
+            "answer": "<p>At the checkout page, to apply your promotion code, click “I have a promotion code”, enter the code, and click on “Apply”. Be sure that there are no additional spaces before or after the discount code.<br\/><br\/>Kindly note that only one promotion code is valid per order. A promotion code cannot be combined with an additional promotion code.<\/p>"
+          }
+        },
+        "16357511308a1d48b4-2": {
+          "type": "content",
+          "settings": {
+            "title": "I am a social media influencer - can I collaborate with you?",
+            "answer": "<p>Please contact our Collaboration Department directly at collaborate@chromeworld.jp<br\/><br\/>Be sure to include the following information:<br\/><br\/>1. Country of origin<br\/><br\/>2. Your first and last name<br\/><br\/>3. Telephone number<br\/><br\/>4. Email address<br\/><br\/>5. Any links to your social media pages<br\/><br\/>Your request will be processed directly by our Collaboration Department who will review it and contact you directly at their earliest convenience.<\/p>"
+          }
+        },
+        "16357511308a1d48b4-3": {
+          "type": "content",
+          "settings": {
+            "title": "Any other questions?",
+            "answer": "<p>You can send us a message through our Contact Us page. We will be happy to assist you.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16357511308a1d48b4-1",
+        "16357511308a1d48b4-2",
+        "16357511308a1d48b4-3"
+      ],
+      "settings": {
+        "title": "Other"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16357501790123c662",
+    "1635750209816095ec",
+    "1635750224db4dd160",
+    "16357511308a1d48b4"
   ]
 }

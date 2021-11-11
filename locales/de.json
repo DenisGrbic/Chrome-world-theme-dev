@@ -5,8 +5,8 @@
       "out_of_stock": "Ausverkauft",
       "view_store_info": "Ladeninformationen anzeigen",
       "check_other_stores": "Überprüfen Sie die Verfügbarkeit in anderen Geschäften",
-      "available_for_pick_up_at_html": "Abholung verfügbar unter <b>{{ location_name }}</b>",
-      "unavailable_for_pick_up_at_html": "Abholung derzeit nicht verfügbar unter <b>{{ location_name }}</b>",
+      "available_for_pick_up_at_html": "Abholung verfügbar unter <b>{{ location_name }}<\/b>",
+      "unavailable_for_pick_up_at_html": "Abholung derzeit nicht verfügbar unter <b>{{ location_name }}<\/b>",
       "available_for_pick_up_at_time_html": "Abholung möglich, {{ pick_up_time }}",
       "unavailable_for_pick_up_at_time_html": "Abholung derzeit nicht verfügbar",
       "kilometers": "km",
@@ -16,7 +16,7 @@
   "product": {
     "price": {
       "range_html": "{{ price_min }} - {{ price_max }}",
-      "unit_pricing_html": "{{ unit_quantity }} | {{ unit_price }} / {{ unit_measurement}}"
+      "unit_pricing_html": "{{ unit_quantity }} | {{ unit_price }} \/ {{ unit_measurement}}"
     },
     "badge": {
       "sale_percentage_range_html": "Speichern Sie bis {{ price_percent }}%",
@@ -35,7 +35,7 @@
     "404": {
       "title": "Seite nicht gefunden",
       "subtext": "Es tut uns Leid, aber die von Ihnen angeforderte Seite existiert nicht.",
-      "continue_shopping_html": "Suchen Sie oder <a href=\"/collections/all\">kaufen Sie weiter ein →</a>"
+      "continue_shopping_html": "Suchen Sie oder <a href=\"\/collections\/all\">kaufen Sie weiter ein →<\/a>"
     },
     "password_page": {
       "opening_soon": "Eröffnet demnächst",
@@ -48,9 +48,9 @@
       "login_form_submit": "Betreten",
       "signup_form_submit": "Abschicken",
       "signup_form_success": "Wir werden Ihnen eine E-Mail kurz bevor wir öffnen!",
-      "admin_link_html": "Sind Sie der Geschäftsinhaber? <a href=\"/admin\" class=\"text-link\">Melden Sie sich hier an</a>",
+      "admin_link_html": "Sind Sie der Geschäftsinhaber? <a href=\"\/admin\" class=\"text-link\">Melden Sie sich hier an<\/a>",
       "password_link": "Mit Passwort betreten",
-      "powered_by_shopify_html": "Dieser Shop wird mit Hilfe von <a href=\"https://www.shopify.com/&ref=out-of-the-sandbox\" target=\"_blank\" rel=\"nofollow\">Shopify</a> betrieben werden"
+      "powered_by_shopify_html": "Dieser Shop wird mit Hilfe von <a href=\"https:\/\/www.shopify.com\/&ref=out-of-the-sandbox\" target=\"_blank\" rel=\"nofollow\">Shopify<\/a> betrieben werden"
     },
     "meta": {
       "tagged_html": "Getaggt \"{{ tags }}\"",
@@ -58,7 +58,7 @@
     },
     "forms": {
       "post_error": "Es wurden nicht alle Felder korrekt ausgefüllt",
-      "post_field_error_html": "Das <strong>{{ field }}</strong> {{ error }}"
+      "post_field_error_html": "Das <strong>{{ field }}<\/strong> {{ error }}"
     },
     "newsletter_form": {
       "title": "Neuigkeiten",
@@ -120,7 +120,7 @@
       "next_article_html": "Nächster →",
       "tags": "Kategorie",
       "author": "Autor",
-      "comment_meta_html": "<strong>{{ author }}</strong> am <strong><time datetime=\"{{ date }}\">{{ date }}</time></strong>",
+      "comment_meta_html": "<strong>{{ author }}<\/strong> am <strong><time datetime=\"{{ date }}\">{{ date }}<\/time><\/strong>",
       "read_time": "min lesen."
     },
     "counts": {
@@ -222,7 +222,7 @@
     },
     "item": {
       "price": {
-        "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}"
+        "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}"
       }
     }
   },
@@ -403,9 +403,9 @@
       "excluding_tax_shipping": "Ohne MwSt und Versandkosten",
       "orders_processed_in_currency_html": "Bestellungen werden in {{ currency }} bearbeitet.",
       "tax_and_shipping": "Steuern und Versandkosten werden beim Checkout berechnet",
-      "taxes_and_shipping_policy_at_checkout_html": "zzgl. MwSt. und <a href=\"{{ link }}\">Versandkosten</a>",
+      "taxes_and_shipping_policy_at_checkout_html": "zzgl. MwSt. und <a href=\"{{ link }}\">Versandkosten<\/a>",
       "taxes_included_but_shipping_at_checkout": "inkl. MwSt. und zzgl. Versandkosten",
-      "taxes_included_and_shipping_policy_html": "inkl. MwSt. zzgl. <a href=\"{{ link }}\">Versandkosten</a>",
+      "taxes_included_and_shipping_policy_html": "inkl. MwSt. zzgl. <a href=\"{{ link }}\">Versandkosten<\/a>",
       "note": "Hinweis",
       "agree_to_terms_html": "Ich stimme zu AGB",
       "view_terms": "[Zeige Bedingungen]",
@@ -421,7 +421,7 @@
     "shipping_calculator": {
       "estimated_shipping": "Geschätzter Versand",
       "country": "Land",
-      "province": "Provinz / Bundesland",
+      "province": "Provinz \/ Bundesland",
       "zip_code": "PLZ",
       "heading": "Versandkostenrechner",
       "submit_button_label": "Versandkosten berechnen",
@@ -449,7 +449,7 @@
       "pick_a_currency": "Wählen Sie eine Währung",
       "social": "Sozial",
       "close_window": "Schließen",
-      "designer_credits_html": "<a href=\"http://outofthesandbox.com/\" target=\"_blank\" title=\"Turbo Shopify Theme by Out of the Sandbox\">Gestaltet von Out of the Sandbox</a>."
+      "designer_credits_html": "<a href=\"http:\/\/outofthesandbox.com\/\" target=\"_blank\" title=\"Turbo Shopify Theme by Out of the Sandbox\">Gestaltet von Out of the Sandbox<\/a>."
     },
     "social_sharing": {
       "title": "Teilen",

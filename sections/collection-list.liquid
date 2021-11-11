@@ -36,8 +36,10 @@
       {% endif %}
 
       <div class="one-whole column">
-        <div class="list-collections-wrapper" adsf>
-          <div class="list-collections equal-columns--outside-trim is-flex is-flex-wrap">
+        <div class="list-collections-wrapper">
+          <!-- <div id="testimonial-{{ section.id }}" class="testimonial-slideshow js-testimonial {% if section.settings.testimonial_text_animation != '' %}text-animation--true{% endif %} transparentBackground--{{ settings.slideshow_button_style }} full-width--{{ section.settings.wide_display }}" data-slider-id="testimonial-{{ section.id }}" data-slideshow-speed="{{ section.settings.testimonial_speed }}" data-slideshow-text-animation="{{ section.settings.testimonial_text_animation }}" data-adaptive-height="{{ section.settings.activate_adaptiveHeight }}"></div> -->
+          <div class="list-collections equal-columns--outside-trim is-flex is-flex-wrap"
+            data-products-per-slide="{{ 1 }}">
             {% for block in blocks %}
               {% comment %} Content settings {% endcomment %}
               {%- assign collection = collections[block.settings.feature_collection] -%}

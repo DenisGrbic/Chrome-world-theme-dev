@@ -1,7 +1,8 @@
 {
   "sections": {
     "main": {
-      "type": "search-template"
+      "type": "search-template",
+      "settings": {}
     }
   },
   "order": [

@@ -2,10 +2,6 @@
   "sections": {
     "main": {
       "type": "contact-custom-template",
-      "settings": {
-        "contact_subheading": "Contact Us Today!",
-        "contact_content": "<p>Customize your contact form to suit your business! Add custom fields like a dropdown menu, checkbox, text fields and more, so that you can gather pertinent info from shoppers right from the get-go, to help answer their inquiries more effectively.</p>"
-      },
       "blocks": {
         "block-1": {
           "type": "richtext",
@@ -22,7 +18,6 @@
             "required": true,
             "field_type": "email"
           }
-
         },
         "block-3": {
           "type": "richtext",
@@ -37,7 +32,11 @@
         "block-1",
         "block-2",
         "block-3"
-      ]
+      ],
+      "settings": {
+        "contact_subheading": "Contact Us Today!",
+        "contact_content": "<p>Customize your contact form to suit your business! Add custom fields like a dropdown menu, checkbox, text fields and more, so that you can gather pertinent info from shoppers right from the get-go, to help answer their inquiries more effectively.<\/p>"
+      }
     }
   },
   "order": [

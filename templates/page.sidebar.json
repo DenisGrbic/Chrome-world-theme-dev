@@ -1,7 +1,8 @@
 {
   "sections": {
     "main": {
-      "type": "page-sidebar-template"
+      "type": "page-sidebar-template",
+      "settings": {}
     }
   },
   "order": [

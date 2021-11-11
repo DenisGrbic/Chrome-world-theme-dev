@@ -76,6 +76,10 @@
                 <div class="is-hidden-mobile-only">
               {% endif %}
 
+              {%- comment -%}
+              <img class="{{ mobile_crop }}" src="{{ block.settings.image | img_url: '2000x' }}" alt="{{ block.settings.image.alt | escape }}" />
+              {%- endcomment -%}
+
               {% if block.settings.image %}
                 {%
                   render 'image-element',
