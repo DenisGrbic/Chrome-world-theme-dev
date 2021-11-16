@@ -10417,7 +10417,7 @@ img[data-flickity-lazyload] {
 .product_gallery {
   margin-bottom: 30px;
   position: relative;
-  opacity: 1;
+  /* opacity: 1; */
   transition: opacity 0.2s;
 
   @include respond-to($medium-down) {
@@ -16113,4 +16113,57 @@ li.localization-wrap::marker {
     margin: auto;
     margin-bottom: 20px;
   }
+}
+@media (max-width: 736px) {
+  #cloud_search_filters_root .cloud-search-page-controls__filters-container {
+    justify-content: center;
+  }
+}
+
+#sub_collections {
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+    margin: 0;
+    li {
+      display: flex;
+      margin-top: 10px;
+      a {
+        margin: 0 5px;
+        white-space: nowrap;
+        border: 1px solid #333;
+        padding: 3px 9px;
+        transition: all .2s;
+        &:hover, &.selected {
+          background-color: #333;
+          span {
+            color: #FFF !important;
+          }
+        }
+      }
+    &:first-child a {
+      margin-left: 0;
+    }
+    &:last-child a {
+      /* margin-right: 0; */
+    }
+  }
+}
+/*
+.ik-scroller {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+  }
+  &::-webkit-scrollbar {
+    width: 1px;
+    background-color: #F5F5F5;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    width: 1px;
+  }
+  */
 }

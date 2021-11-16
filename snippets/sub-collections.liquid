@@ -1,0 +1,59 @@
+<nav role="navigation">
+  <ul class="ik-scroller">
+    {%- for link in linklists.main-menu.links -%}
+      {% if collection.handle == link.handle and link.links != blank  %}
+        {%- for child_link in link.links -%}
+          <li>
+            <a class="{% if collection.url == child_link.url %}selected{% endif %}" 
+              href="{% if collection.url == child_link.url %}#{% else %}{{ child_link.url }}{% endif %}" 
+              {% if child_link.active %}aria-current="page"{% endif %}>
+              <span>{{ child_link.title }}</span>
+            </a>
+
+            {%- if child_link.links != blank -%}
+              <ul>
+                {%- for grandchild_link in child_link.links -%}
+                  <li>
+                    <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+                      {{ grandchild_link.title }}
+                    </a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      {% elsif collection.handle != link.handle and link.links != blank %}
+        {% assign child_link = "" %}
+        {%- for child_link in link.links -%}
+          {% if collection.url == child_link.url %}  
+            {% assign child_link = link %}
+          {% endif %}
+        {%- endfor -%}
+        {% if child_link != "" %}
+          {%- for child_link in child_link.links -%}
+            <li>
+              <a class="{% if collection.url == child_link.url %}selected{% endif %}" 
+                href="{% if collection.url == child_link.url %}#{% else %}{{ child_link.url }}{% endif %}" 
+                {% if child_link.active %}aria-current="page"{% endif %}>
+                <span>{{ child_link.title }}</span>
+              </a>
+
+              {%- if child_link.links != blank -%}
+                <ul>
+                  {%- for grandchild_link in child_link.links -%}
+                    <li>
+                      <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+                        {{ grandchild_link.title }}
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        {% endif %}
+      {% endif %}
+    {%- endfor -%}
+  </ul>
+</nav>
