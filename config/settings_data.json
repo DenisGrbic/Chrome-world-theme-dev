@@ -1,7 +1,7 @@
 {
   "current": {
     "performance": "ludicrous",
-    "image_loading_style": "blur-up",
+    "image_loading_style": "appear",
     "logo_color": "#000000",
     "regular_color": "#333333",
     "headline_color": "#333333",

@@ -2414,7 +2414,8 @@ li > a.url-deadlink {
 
     &:hover,
     &:focus {
-      color: liquid-object("settings.nav_color_hover");
+      /* color: liquid-object("settings.nav_color_hover"); */
+      color: #FFF;
     }
   }
 }
@@ -8083,11 +8084,13 @@ button.disclosure__button {
 
   &:hover,
   &[aria-current="true"] {
-    color: liquid-object("settings.top_bar_color_hover");
+    /* color: liquid-object("settings.top_bar_color_hover"); */
+    color: #FFF;
   }
 
   &:focus {
-    color: liquid-object("settings.nav_color_hover");
+    /* color: liquid-object("settings.nav_color_hover"); */
+    color: #FFF;
   }
 }
 
@@ -16166,4 +16169,29 @@ li.localization-wrap::marker {
     width: 1px;
   }
   */
+}
+
+
+html[lang="zh"] {
+  .shopify-section--slideshow {
+    .caption-content {
+      .headline {
+        font-size: 46px;
+        @media (min-width: 790px) {
+          font-size: 72px;
+        }
+      }
+      .button-grid-container {
+        a {
+          padding: 22px 42px;
+          font-size: 18px;
+          @media (min-width: 790px) {
+            padding: 25px 40px;
+            font-size: 20px;
+          }
+        }
+      }
+      }
+    }
+  }
 }
