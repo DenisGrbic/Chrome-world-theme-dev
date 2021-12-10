@@ -1,0 +1,85 @@
+<section class="block block-uc block-views">
+  <div class="container">
+    <div class="view view-category section">
+      <div class="row_homepage container one-whole column">
+          <div class="product-category-wrapper">
+            <div class="cat-img-outer">
+              <div class="main">
+                  <picture>
+                      <img alt="" src="{{ section.settings.image_1 | img_url : "1000x" }}">
+                  </picture>
+              </div>
+              <div class="overlap">
+                  <div class="overlap-text">
+                      {{ section.settings.text1 }}
+                      <a href="{{ section.settings.link1 }}">SHOP</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-category-wrapper">
+              <div class="cat-img-outer-reverse">
+                  <div class="overlap">
+                      <div class="overlap-text">
+                          {{ section.settings.text2 }}
+                          <a href="{{ section.settings.link2 }}">SHOP</a>
+                      </div>
+                  </div>
+                  <div class="main">
+                    <picture>
+                        <img alt="" src="{{ section.settings.image_2 | img_url : "1000x" }}">
+                    </picture>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Shop Women and Men",
+  "settings": [
+      {
+          "type": "richtext",
+          "id": "text1",
+          "label": "Text1",
+          "default": "<p>SHOP<br>  WOMENS</p>"
+      },
+      {
+          "type": "richtext",
+          "id": "text2",
+          "label": "Text2",
+          "default": "<p>SHOP<br> MENS</p>"
+      },
+      {
+          "type": "url",
+          "id": "link1",
+          "label": "Link1"
+      },
+      {
+          "type": "url",
+          "id": "link2",
+          "label": "Link2"
+      },
+      {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image"    
+      },
+      {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image"    
+      }
+  ],
+  "presets": [
+      {
+          "category": "Custom",
+          "name": "Shop Women and Men",
+          "settings": {}
+      }
+  ]
+}
+{% endschema %}

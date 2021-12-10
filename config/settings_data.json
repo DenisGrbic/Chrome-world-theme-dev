@@ -100,6 +100,11 @@
     "footer_logo_font_size": 15,
     "footer_heading_font_size": 14,
     "footer_font_size": 16,
+    "mega_menu_1": true,
+    "mega_menu_2": true,
+    "mega_menu_3": true,
+    "mega_menu_4": true,
+    "mega_menu_5": true,
     "search_option": "product",
     "product_form_style": "select",
     "show_dynamic_checkout_button": false,
@@ -163,6 +168,80 @@
     "sections": {
       "header": {
         "type": "header",
+        "blocks": {
+          "5fbcfdcf-0266-4998-9207-11ebbaa2f437": {
+            "type": "menu-link-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/foreverring_1200x_a6b80a4e-5b1d-4d5b-8e7e-3a5950b38d73.jpg"
+            }
+          },
+          "92a698cc-e02a-4827-b15a-a9a6e0ffee2e": {
+            "type": "menu-link-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/DSC08445_1200x_1515f0fa-0cea-4049-9d56-20298ad93076.jpg"
+            }
+          },
+          "5beba671-6daa-4fbf-928f-fdeeebb7127f": {
+            "type": "menu-link-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/DSC09236_1200x_48688057-1f5b-405b-9fdc-f75fb1ff26eb.jpg"
+            }
+          },
+          "d220e050-7977-4642-94fe-f553b5348e8c": {
+            "type": "menu-link-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/DSC08846_1200x_2e493d2b-6d26-4765-85e1-d970f3712def.jpg"
+            }
+          },
+          "b5f32ca1-a41e-41ac-952a-5413e2325ca1": {
+            "type": "menu-link-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/DSC09438_1200x_4065baaf-853d-4565-9ad9-e2360f19a509.jpg"
+            }
+          },
+          "7eea54ce-9b1d-438c-9eb1-a49d9a4edefa": {
+            "type": "menu-link-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/DSC09438_1200x_4065baaf-853d-4565-9ad9-e2360f19a509.jpg"
+            }
+          },
+          "fd1f696f-670d-4c79-bc57-065dde3d47b6": {
+            "type": "menu-link-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2377846.png"
+            }
+          },
+          "e3b690b0-7f08-4ee2-a1f7-b027df122913": {
+            "type": "menu-link-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/4456953.png"
+            }
+          },
+          "0bbaaff0-8588-436a-af71-6ad92d35e600": {
+            "type": "menu-link-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/TB2LX_6JbGYBuNjy0FoXXciBFXa__109808005_1200x_a18aea46-6e45-41d6-b648-cb1a8ee6db42.jpg"
+            }
+          },
+          "f1d90a73-ee16-4a27-aa30-7323c82790ad": {
+            "type": "menu-link-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/DSC07504_1200x_69e33e3e-0ae3-4ca0-944f-f1b21ee10199.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "5fbcfdcf-0266-4998-9207-11ebbaa2f437",
+          "92a698cc-e02a-4827-b15a-a9a6e0ffee2e",
+          "5beba671-6daa-4fbf-928f-fdeeebb7127f",
+          "d220e050-7977-4642-94fe-f553b5348e8c",
+          "b5f32ca1-a41e-41ac-952a-5413e2325ca1",
+          "7eea54ce-9b1d-438c-9eb1-a49d9a4edefa",
+          "fd1f696f-670d-4c79-bc57-065dde3d47b6",
+          "e3b690b0-7f08-4ee2-a1f7-b027df122913",
+          "0bbaaff0-8588-436a-af71-6ad92d35e600",
+          "f1d90a73-ee16-4a27-aa30-7323c82790ad"
+        ],
         "settings": {
           "social_icons_header": false,
           "phone_number": "",
@@ -200,14 +279,6 @@
               "show_social": true
             }
           },
-          "footer-0": {
-            "type": "logo",
-            "disabled": true,
-            "settings": {
-              "text_align": "left",
-              "social_icons_footer": false
-            }
-          },
           "footer-1": {
             "type": "link_list",
             "settings": {
@@ -232,13 +303,12 @@
         },
         "block_order": [
           "e1be0cd6-d483-4f6e-9b53-4bde249d39f4",
-          "footer-0",
           "footer-1",
           "footer-2",
           "e6d429be-8778-494e-bc18-185e413b0278"
         ],
         "settings": {
-          "copyright_text": "© CHROME WORLD | クロムハーツ専門店クロムワールド",
+          "copyright_text": "Copyright © CHROME WORLD | クロムハーツ専門店クロムワールド 2021. All Rights Reserved.",
           "display_designed_by": false,
           "display_payment_methods": true,
           "show_locale_selector": true,
@@ -267,6 +337,445 @@
       "trustpilot": {
         "type": "trustpilot",
         "settings": {}
+      },
+      "mega-menu-1": {
+        "type": "mega-menu-1",
+        "blocks": {
+          "mega-menu-1-0": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_top": "shopify:\/\/shop_images\/DSC04622_300x_e67f0cf7-3296-43b8-aae5-7060dcbf3634.jpg",
+              "image_caption_top": "Leather wallets",
+              "image_link_top": "https:\/\/chromeworld.co.jp\/collections\/leather-wallets\/products\/cross-card-holder",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-1-1": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_top": "shopify:\/\/shop_images\/DSC03579_300x_06416d50-b88c-4e6e-b469-c9f074c0b614.jpg",
+              "image_caption_top": "Leather belts",
+              "image_link_top": "https:\/\/chromeworld.co.jp\/collections\/leather-belts\/products\/dagger-belt-without-buckle",
+              "menu_1": "",
+              "menu_1_link": "https:\/\/chromeworld.co.jp\/collections\/leather-belts\/products\/dagger-belt-without-buckle",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-1-2": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_top": "shopify:\/\/shop_images\/DSC05514_300x_0fa2acc4-6547-4885-a5f1-0a94fa421191.jpg",
+              "image_caption_top": "Leather bags",
+              "image_link_top": "https:\/\/chromeworld.co.jp\/collections\/leather-bags\/products\/fleur-large-tote-with-scroll-label",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-1-0",
+          "mega-menu-1-1",
+          "mega-menu-1-2"
+        ],
+        "settings": {
+          "parent": "leather goods"
+        }
+      },
+      "mega-menu-2": {
+        "type": "mega-menu-2",
+        "blocks": {
+          "mega-menu-2-0": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_top": "shopify:\/\/shop_images\/TB2LX_6JbGYBuNjy0FoXXciBFXa__109808005_1200x_0ab56df9-8472-4e07-b0a2-92a52ef96031.jpg",
+              "image_caption_top": "key chains",
+              "image_link_top": "https:\/\/chromeworld.co.jp\/collections\/key-chains\/products\/star-of-david-and-dagger-key-ring",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-1": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_top": "shopify:\/\/shop_images\/DSC08485_800x_dd02978a-1c80-44dc-a619-cb7db9191100.jpg",
+              "image_caption_top": "money clips",
+              "image_link_top": "https:\/\/chromeworld.co.jp\/collections\/money-clips\/products\/heart-dagger-money-clip",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-2": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_top": "shopify:\/\/shop_images\/DSC09053_1200x_eb905e96-f21f-4b03-aaf8-9f8e3884afd9.jpg",
+              "image_caption_top": "hair ties",
+              "image_link_top": "https:\/\/chromeworld.co.jp\/collections\/hair-ties\/products\/cross-ball-hair-tie",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-3": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_top": "shopify:\/\/shop_images\/DSC09096_1200x_34b8dea4-9fac-4e69-a30a-33487fe1a281.jpg",
+              "image_caption_top": "hair clips",
+              "image_link_top": "https:\/\/chromeworld.co.jp\/collections\/hair-clips\/products\/ch-plus-hair-clip",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-2-0",
+          "mega-menu-2-1",
+          "mega-menu-2-2",
+          "mega-menu-2-3"
+        ],
+        "settings": {
+          "parent": "Accessories"
+        }
+      },
+      "mega-menu-3": {
+        "type": "mega-menu-3",
+        "blocks": {
+          "mega-menu-3-0": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_top": "shopify:\/\/shop_images\/DSC07575_1200x_095d84b1-ee58-4baa-8559-64876eab9a5c.jpg",
+              "image_caption_top": "for him",
+              "image_link_top": "https:\/\/chromeworld.co.jp\/collections\/for-him\/products\/6mm-dagger-spacer-ring",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-3-1": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_top": "shopify:\/\/shop_images\/DSC07504_1200x_a5c417b1-ec04-4fc3-9238-ff99a405b44b.jpg",
+              "image_caption_top": "for her",
+              "image_link_top": "https:\/\/chromeworld.co.jp\/collections\/for-her\/products\/plus-band-ring",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-3-0",
+          "mega-menu-3-1"
+        ],
+        "settings": {
+          "parent": "Gifts"
+        }
+      },
+      "mega-menu-4": {
+        "type": "mega-menu-4",
+        "blocks": {
+          "mega-menu-4-0": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p>Add description, images, menus and links to your mega menu<\/p>",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-4-1": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p>A column with no settings can be used as a spacer<\/p>",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-4-2": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-4-3": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p>Link to your collections, sales and even external links<\/p>",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-4-4": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p>Add up to five columns<\/p>",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-4-0",
+          "mega-menu-4-1",
+          "mega-menu-4-2",
+          "mega-menu-4-3",
+          "mega-menu-4-4"
+        ],
+        "settings": {
+          "parent": ""
+        }
+      },
+      "mega-menu-5": {
+        "type": "mega-menu-5",
+        "blocks": {
+          "mega-menu-5-0": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p>Add description, images, menus and links to your mega menu<\/p>",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-5-1": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p>A column with no settings can be used as a spacer<\/p>",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-5-2": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-5-3": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p>Link to your collections, sales and even external links<\/p>",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-5-4": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p>Add up to five columns<\/p>",
+              "image_caption_top": "",
+              "image_link_top": "",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_caption_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-5-0",
+          "mega-menu-5-1",
+          "mega-menu-5-2",
+          "mega-menu-5-3",
+          "mega-menu-5-4"
+        ],
+        "settings": {
+          "parent": ""
+        }
       }
     },
     "content_for_index": []

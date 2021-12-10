@@ -13,7 +13,6 @@
     },
     "1635244936cf23d112": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "wide_display": true,
         "aspect_ratio": "16:9",
@@ -49,6 +48,7 @@
     },
     "16361012262139c533": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "16361012262139c533-0": {
           "type": "image",
@@ -66,7 +66,7 @@
             "text_position": "center",
             "text_align": "center",
             "caption_content_background": "original",
-            "mobile_image": "shopify:\/\/shop_images\/179333472_2887206584924411_2091601585708027799_n.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/177275560_930164931082516_3742136061806459708_n.jpg",
             "mobile_image_crop": "none"
           }
         }
@@ -159,6 +159,17 @@
         "frontpage_collections_per_row": 3,
         "css_class": "",
         "custom_css": ""
+      }
+    },
+    "16382204041c65d25d": {
+      "type": "ik-shop",
+      "settings": {
+        "text1": "<p>SHOP<br\/>  WOMENS<\/p>",
+        "text2": "<p>SHOP<br\/> MENS<\/p>",
+        "link1": "shopify:\/\/collections\/for-her",
+        "link2": "shopify:\/\/collections\/for-him",
+        "image_1": "shopify:\/\/shop_images\/women.jpg",
+        "image_2": "shopify:\/\/shop_images\/men.jpg"
       }
     },
     "1636485257ec6c30ba": {
@@ -259,7 +270,7 @@
         "block-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DlKvf8UWwAYO4N8.jpg",
+            "image": "shopify:\/\/shop_images\/179333472_2887206584924411_2091601585708027799_n.jpg",
             "image_crop": "none",
             "subtitle": "CHROME HEARTS IS",
             "title": "NOTORIOUS",
@@ -335,6 +346,7 @@
     "1635244936cf23d112",
     "16361012262139c533",
     "collection-list-1",
+    "16382204041c65d25d",
     "1636485257ec6c30ba",
     "1635360350d6eb453b",
     "image-text-1"

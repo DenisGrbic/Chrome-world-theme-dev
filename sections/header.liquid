@@ -130,16 +130,16 @@
       <ul class="menu" id="mobile_menu">
         {%
           render 'mobile-menu',
-          menu: section.settings.main_linklist
+          menu: section.settings.main_linklist, blocks: section.blocks
         %}
         {%
           render 'mobile-menu',
-          menu: section.settings.main_linklist2
+          menu: section.settings.main_linklist2, blocks: section.blocks
         %}
         {%
           render 'mobile-menu',
           menu: section.settings.top_bar_menu,
-          context: 'top_bar_menu'
+          context: 'top_bar_menu', blocks: section.blocks
         %}
 
         {% if section.settings.phone_number != blank %}
@@ -215,7 +215,7 @@
 <header class="{% if feature_image %}feature_image{% endif %} {% if section.settings.logo_home != blank %}secondary_logo--true{% endif %} search-enabled--{{ section.settings.search_enabled }}">
   <div class="header header-fixed--{{ section.settings.fixed_header }} {% if settings.header_background %}header-background--solid{% endif %}">
 
-    <div class="top-bar">
+    <div data-topbar class="top-bar">
       {% if section.settings.social_icons_header %}
         {% render 'social-icons' %}
       {% endif %}
@@ -249,8 +249,26 @@
       {% endif %}
     {% endcapture %}
 
-    {{ search }}
+    {% capture logo %}
+      <div class="header__logo {% if section.settings.logo_home == blank and section.settings.logo == blank %}logo--text{% else %}logo--image{% endif %}">
+        <a href="{{ routes.root_url }}" title="{{ shop.name }}">
+          {% if section.settings.logo_home != blank %}
+            <img src="{{ section.settings.logo_home | img_url: '410x' }}" class="secondary_logo" alt="{{ shop.name | escape }}" />
+          {% endif %}
 
+          {% if section.settings.logo != blank %}
+            <img src="{{ section.settings.logo | img_url: '410x' }}" class="primary_logo lazyload" alt="{{ shop.name | escape }}" />
+          {% else %}
+            <span class="header__logo-text">{{ shop.name }}</span>
+          {% endif %}
+        </a>
+      </div>
+    {% endcapture %}
+
+    {{ search }}
+    
+    {{ logo }}
+    
       <ul class="menu">
         {% if section.settings.phone_number != blank %}
           <li>
@@ -647,7 +665,15 @@
     }
   }
 </style>
+<script>
+  $('.vertical-menu_submenu ').each(function(){
+    if($(this).children().length > 10) {
+      $(this).css({'column-count': 2})
+    }
 
+  })
+  
+</script>
 {% schema %}
 {
   "name": "Header",
@@ -888,7 +914,21 @@
         }
       ]
     }
+  ],
+  "blocks": [
+    {
+      "type": "menu-link-image",
+      "name": "Mobile menu link image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
   ]
+  
 }
 
 {% endschema %}

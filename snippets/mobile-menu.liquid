@@ -1,12 +1,15 @@
+
 {% if context == 'top_bar_menu' %}
   {% for link in linklists[menu].links %}
     <li>
       {% if link.url == 'http://' or link.url == '' or link.url == '/' or link.url == 'https://' or link.url == '#' %}
         <a data-no-instant href="{{ link.url }}" class="parent-link--false">
+          
           {{ link.title }}
         </a>
       {% else %}
         <a data-no-instant href="{{ link.url }}" class="parent-link--true">
+          
           {{ link.title }}
         </a>
       {% endif %}
@@ -18,11 +21,21 @@
       <li data-mobile-dropdown-rel="{{ link.handle }}">
         {% if link.url == 'http://' or link.url == '' or link.url == '/' or link.url == 'https://' or link.url == '#' %}
           <a data-no-instant href="{{ link.url }}" class="parent-link--false">
-            {{ link.title }}
+            <div>
+              {% if blocks[forloop.index0].settings.image != blank %}
+                <img src="{{ blocks[forloop.index0].settings.image | img_url: 'medium'}}">
+              {% endif %}
+              {{ link.title }}</div> 
+            
           </a>
         {% else %}
           <a data-no-instant href="{{ link.url }}" class="parent-link--true">
-            {{ link.title }}
+            <div>
+              {% if blocks[forloop.index0].settings.image != blank %}
+                <img src="{{ blocks[forloop.index0].settings.image | img_url: 'medium'}}">
+              {% endif %}
+              {{ link.title }}</div> 
+            
           </a>
         {% endif %}
       </li>
@@ -30,11 +43,19 @@
       <li data-mobile-dropdown-rel="{{ link.handle }}" class="sublink">
         {% if link.url == 'http://' or link.url == '' or link.url == '/' or link.url == 'https://' or link.url == '#' %}
           <a data-no-instant href="{{ link.url }}" class="parent-link--false">
-            {{ link.title }} <span class="right icon-down-arrow"></span>
+            <div>
+            {% if blocks[forloop.index0].settings.image != blank %}
+              <img src="{{ blocks[forloop.index0].settings.image | img_url: 'medium'}}">
+            {% endif %}
+            {{ link.title }}</div> <span class="right icon-down-arrow"></span>
           </a>
         {% else %}
           <a data-no-instant href="{{ link.url }}" class="parent-link--true">
-            {{ link.title }} <span class="right icon-down-arrow"></span>
+            <div>
+            {% if blocks[forloop.index0].settings.image != blank %}
+              <img src="{{ blocks[forloop.index0].settings.image | img_url: 'medium'}}">
+            {% endif %}
+            {{ link.title }} </div><span class="right icon-down-arrow"></span>
           </a>
         {% endif %}
         <ul>
