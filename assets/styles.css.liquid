@@ -20009,11 +20009,9 @@ html[lang=zh] .shopify-section--slideshow .caption-content .button-grid-containe
   grid-template-columns: 2fr 1fr;
   height: 100%;
   overflow: hidden;
-}
-@media (max-width: 789px) {
-  .cat-img-outer {
-    display: block;
-  }
+  /* @media (max-width: 789px) { */
+  display: block;
+  /* } */
 }
 .cat-img-outer .main {
   position: relative;
@@ -20027,14 +20025,12 @@ html[lang=zh] .shopify-section--slideshow .caption-content .button-grid-containe
   width: 100%;
   height: 100%;
   background: #333;
-}
-@media (max-width: 789px) {
-  .cat-img-outer .overlap {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: transparent;
-  }
+  /* @media (max-width: 789px) { */
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: transparent;
+  /* } */
 }
 .cat-img-outer .overlap-text {
   position: absolute;
@@ -20044,35 +20040,31 @@ html[lang=zh] .shopify-section--slideshow .caption-content .button-grid-containe
   transform: translateY(-50%);
   color: white;
   width: 100%;
+  /* @media (max-width: 970px) {  */
+  /* } */
+  /* @media (max-width: 789px) { */
+  background: transparent;
+  /* } */
 }
-@media (max-width: 970px) {
-  .cat-img-outer .overlap-text p {
-    font-size: 20px;
-  }
+.cat-img-outer .overlap-text p {
+  font-size: 20px;
 }
-@media (max-width: 789px) {
-  .cat-img-outer .overlap-text {
-    background: transparent;
-  }
-  .cat-img-outer .overlap-text p {
-    font-size: 28px;
-  }
-  .cat-img-outer .overlap-text a {
-    padding: 10px 20px;
-  }
+.cat-img-outer .overlap-text p {
+  font-size: 28px;
+}
+.cat-img-outer .overlap-text a {
+  padding: 10px 20px;
 }
 
 .cat-img-outer-reverse {
   position: relative;
-  display: grid;
+  display: block;
   grid-template-columns: 1fr 2fr;
   height: 100%;
   overflow: hidden;
-}
-@media (max-width: 789px) {
-  .cat-img-outer-reverse {
-    display: block;
-  }
+  /* @media (max-width: 789px) { */
+  display: block;
+  /* } */
 }
 .cat-img-outer-reverse .main {
   position: relative;
@@ -20086,14 +20078,12 @@ html[lang=zh] .shopify-section--slideshow .caption-content .button-grid-containe
   width: 100%;
   height: 100%;
   background: #333;
-}
-@media (max-width: 789px) {
-  .cat-img-outer-reverse .overlap {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: transparent;
-  }
+  /* @media (max-width: 789px) { */
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: transparent;
+  /* } */
 }
 .cat-img-outer-reverse .overlap-text {
   position: absolute;
@@ -20103,23 +20093,21 @@ html[lang=zh] .shopify-section--slideshow .caption-content .button-grid-containe
   transform: translateY(-50%);
   color: white;
   width: 100%;
+  /* @media (max-width: 970px) {  */
+  /* } */
+  /* @media (max-width: 789px) { */
+  z-index: 1;
+  background: transparent;
+  /* } */
 }
-@media (max-width: 970px) {
-  .cat-img-outer-reverse .overlap-text p {
-    font-size: 20px;
-  }
+.cat-img-outer-reverse .overlap-text p {
+  font-size: 20px;
 }
-@media (max-width: 789px) {
-  .cat-img-outer-reverse .overlap-text {
-    z-index: 1;
-    background: transparent;
-  }
-  .cat-img-outer-reverse .overlap-text p {
-    font-size: 28px;
-  }
-  .cat-img-outer-reverse .overlap-text a {
-    padding: 10px 20px;
-  }
+.cat-img-outer-reverse .overlap-text p {
+  font-size: 28px;
+}
+.cat-img-outer-reverse .overlap-text a {
+  padding: 10px 20px;
 }
 
 @media (max-width: 789px) {

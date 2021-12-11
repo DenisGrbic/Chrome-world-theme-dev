@@ -16341,9 +16341,9 @@ html[lang="zh"] {
   grid-template-columns: 2fr 1fr;
   height: 100%;
   overflow: hidden;
-  @media (max-width: 789px) {
+  /* @media (max-width: 789px) { */
       display: block;
-  }
+  /* } */
   .main {
       position: relative;
       width: 100%;
@@ -16357,12 +16357,12 @@ html[lang="zh"] {
       width: 100%;
       height: 100%;
       background: #333;
-      @media (max-width: 789px) {
+      /* @media (max-width: 789px) { */
           position: absolute;
           right: 0;
           top: 0;
           background: transparent;
-      }
+      /* } */
   }
   .overlap-text {
       position: absolute;
@@ -16372,12 +16372,12 @@ html[lang="zh"] {
       transform: translateY(-50%);
       color: white;
       width: 100%;
-      @media (max-width: 970px) { 
+      /* @media (max-width: 970px) {  */
         p{
           font-size: 20px;
         }
-      }
-      @media (max-width: 789px) {
+      /* } */
+      /* @media (max-width: 789px) { */
         
         p {
           font-size: 28px;
@@ -16387,20 +16387,20 @@ html[lang="zh"] {
         }
           background: transparent;
           
-      }
+      /* } */
   }
 }
 
 .cat-img-outer-reverse {
   position: relative;
-  display: grid;
+  display: block;
   grid-template-columns: 1fr 2fr;
   height: 100%;
   overflow: hidden;
   
-  @media (max-width: 789px) {
+  /* @media (max-width: 789px) { */
       display: block;
-  }
+  /* } */
   .main {
       position: relative;
       width: 100%;
@@ -16415,13 +16415,13 @@ html[lang="zh"] {
       height: 100%;
       background: #333;
       
-      @media (max-width: 789px) {
+      /* @media (max-width: 789px) { */
      
           position: absolute;
           right: 0;
           top: 0;
           background: transparent;
-      }
+      /* } */
   }
   .overlap-text {
     position: absolute;
@@ -16431,12 +16431,12 @@ html[lang="zh"] {
     transform: translateY(-50%);
     color: white;
     width: 100%;
-    @media (max-width: 970px) { 
+    /* @media (max-width: 970px) {  */
       p{
         font-size: 20px;
       }
-    }
-    @media (max-width: 789px) {
+    /* } */
+    /* @media (max-width: 789px) { */
       
       z-index: 1;
       p{
@@ -16446,7 +16446,7 @@ html[lang="zh"] {
         padding: 10px 20px;
       }
         background: transparent;
-    }
+    /* } */
   }
 }
 
