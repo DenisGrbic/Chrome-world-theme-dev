@@ -833,7 +833,7 @@ $gutter: 20px;
 .shopify-section-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   @media (max-width: 798px){
     padding-top: 0;
   }
@@ -10452,6 +10452,8 @@ img[data-flickity-lazyload] {
 
   img {
     background-color: liquid-object("settings.shop_bg_color");
+    max-height: 500px;
+    width: auto;
   }
 
   &.show-gallery-arrows--false {
@@ -16317,6 +16319,7 @@ html[lang="zh"] {
   .product-category-wrapper {
       @media (min-width: 790px) {
           margin-bottom: 40px;
+          height: 500px;
       }
   }
 

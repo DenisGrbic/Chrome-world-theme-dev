@@ -855,7 +855,7 @@ Description: Shopify Theme (https://www.shopify.com/&ref=out-of-the-sandbox)
 .shopify-section-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 @media (max-width: 798px) {
   .shopify-section-wrapper {
@@ -13909,6 +13909,8 @@ img[data-flickity-lazyload] {
 }
 .product_gallery img {
   background-color: {{ settings.shop_bg_color }};
+  max-height: 500px;
+  width: auto;
 }
 .product_gallery.show-gallery-arrows--false .flickity-prev-next-button {
   display: none;
@@ -19987,6 +19989,7 @@ html[lang=zh] .shopify-section--slideshow .caption-content .button-grid-containe
 @media (min-width: 790px) {
   .block-views .product-category-wrapper {
     margin-bottom: 40px;
+    height: 500px;
   }
 }
 .block-views picture {
