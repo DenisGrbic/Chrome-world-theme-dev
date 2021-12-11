@@ -16506,6 +16506,16 @@ html[lang="zh"] {
     width: 50%;
   }
 }
+.mega-menu.mega-menu-1 {
+  .dropdown_content  {
+    width: 70%;
+  }
+}
+.mega-menu.mega-menu-2 {
+  .dropdown_content  {
+    width: 90%;
+  }
+}
 .shopify-section--header {
   box-shadow: 0 5px 5px -5px #333;
   margin-bottom: 30px;
@@ -16555,6 +16565,24 @@ html[lang="zh"] {
           &:hover {
             background-color: white;
             color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* megamenu new style */
+
+.dropdown_container {
+  .dropdown {
+    .dropdown_column {
+      padding: 0;
+      .mega-menu__image-caption-link {
+        .image-element__wrap {
+          img {
+            max-height: 150px;
+            width: auto;
           }
         }
       }
