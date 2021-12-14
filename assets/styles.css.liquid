@@ -855,7 +855,7 @@ Description: Shopify Theme (https://www.shopify.com/&ref=out-of-the-sandbox)
 .shopify-section-wrapper {
   display: flex;
   flex-wrap: wrap;
-  /* padding-top: 40px; */
+  padding-top: 40px;
 }
 @media (max-width: 798px) {
   .shopify-section-wrapper {
@@ -6149,6 +6149,11 @@ div.breadcrumb-collection.breadcrumb-collection--product {
 .breadcrumb__wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .breadcrumb__wrapper {
+    padding: 20px 0 10px 0;
+  }
 }
 
 /* #Images
@@ -13890,7 +13895,7 @@ img[data-flickity-lazyload] {
 }
 @media only screen and (max-width: 798px) {
   .product_gallery {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -13930,6 +13935,11 @@ img[data-flickity-lazyload] {
 .product_gallery_nav {
   text-align: center;
   margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .product_gallery_nav {
+    margin-bottom: 10px;
+  }
 }
 .product_gallery_nav.product_gallery_nav--bottom-thumbnails .gallery-cell {
   width: auto;
