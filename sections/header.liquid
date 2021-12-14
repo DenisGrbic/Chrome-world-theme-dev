@@ -79,8 +79,8 @@
       {% if section.settings.logo_mobile != blank %}
         <img src="{{ section.settings.logo_mobile | img_url: '410x' }}" alt="{{ shop.name | escape }}" class="lazyload" />
       {% elsif section.settings.logo != blank %}
-        <img class="hide--mobile" src="{{ section.settings.logo | img_url: '400x' }}" alt="{{ shop.name | escape }}" />
-        <img class="hide--desktop" src="{{ section.settings.logo | img_url: '200x' }}" alt="{{ shop.name | escape }}" />
+        <img class="hide--mobile" src="{{ section.settings.logo | img_url: '410x' }}" alt="{{ shop.name | escape }}" />
+        <img class="hide--desktop" src="{{ section.settings.logo | img_url: '410x' }}" alt="{{ shop.name | escape }}" />
       {%- comment -%}
         {%- assign img_url = section.settings.logo | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
         <img class="lazyload"
