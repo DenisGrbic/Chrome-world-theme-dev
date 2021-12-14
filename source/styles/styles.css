@@ -4403,7 +4403,7 @@ $color-blankstate-background: liquid-object("settings.headline_color | color_mod
 
   .video__text-container {
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translate(0, -50%);
     width: 100%;
     margin: auto;
@@ -10150,7 +10150,7 @@ $topMenuHeight: 40px;
 
 @liquid-if "settings.header_background == false" {
   .index-sections .under-menu:nth-child(1) {
-    margin-top: $topMenuHeight;
+    /* margin-top: $topMenuHeight; */
   }
 
   .shopify-section--page-details-template .under-menu:nth-child(1) {
@@ -16526,7 +16526,7 @@ html[lang="zh"] {
 }
 .shopify-section--header {
   box-shadow: 0 5px 5px -5px #333;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   .mega-menu__image-caption {
     text-transform: uppercase;
   }
