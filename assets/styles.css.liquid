@@ -9599,7 +9599,7 @@ div.is-absolute {
   margin: 0;
   padding: 10px 20px 0;
   position: relative;
-  min-height: 70vh;
+  min-height: 100vh;
   width: 100%;
 }
 .mobile-search input#q {
@@ -20224,4 +20224,16 @@ html[lang=zh] .shopify-section--slideshow .caption-content .button-grid-containe
 .dropdown_container .dropdown .dropdown_column .mega-menu__image-caption-link .image-element__wrap img {
   max-height: 150px;
   width: auto;
+}
+
+@media (max-width: 767px) {
+  .instant-search-menu .cs-item-details .description {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .plyr__video-embed, .plyr__video-wrapper--fixed-ratio {
+    padding-bottom: 150% !important;
+  }
 }

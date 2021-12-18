@@ -7697,7 +7697,7 @@ $banner-crop-height: 60vh;
     margin: 0;
     padding: 10px 20px 0;
     position: relative;
-    min-height: 70vh;
+    min-height: 100vh;
     width: 100%;
   }
 
@@ -16596,4 +16596,17 @@ html[lang="zh"] {
       }
     }
   }
+}
+
+.instant-search-menu .cs-item-details .description {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+.plyr__video-embed, .plyr__video-wrapper--fixed-ratio {
+  @media (max-width: 767px) {
+    padding-bottom: 150% !important;
+  }
+  
 }

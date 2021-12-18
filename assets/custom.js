@@ -147,3 +147,8 @@ $(window).scroll(function() {
     $("#shopify-section-header").removeClass("is-sticky");
   }
 });
+
+$('.cloud-search-mobile__cancel').click(function(){
+  console.log('search cancel')
+  $('.close-search').click();
+})
