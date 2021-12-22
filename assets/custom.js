@@ -138,17 +138,16 @@ $('.Cart__NoteButton').click(function(){
   $('.cart-note-hidden-part').slideToggle();
 });
 
-$(window).scroll(function() {
-  var announce_h = $("#shopify-section-announcement").height();
-  var scroll_top = $(document).scrollTop();
-  if(scroll_top > announce_h) {
-    $("#shopify-section-header").addClass("is-sticky");
-  }else {
-    $("#shopify-section-header").removeClass("is-sticky");
-  }
-});
+// $(window).scroll(function() {
+//   var announce_h = $("#shopify-section-announcement").height();
+//   var scroll_top = $(document).scrollTop();
+//   if(scroll_top > announce_h) {
+//     $("#shopify-section-header").addClass("is-sticky");
+//   }else {
+//     $("#shopify-section-header").removeClass("is-sticky");
+//   }
+// });
 
 $('.cloud-search-mobile__cancel').click(function(){
-  console.log('search cancel')
   $('.close-search').click();
 })
