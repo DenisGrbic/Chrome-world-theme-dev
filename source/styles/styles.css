@@ -14356,6 +14356,17 @@ html {
 }
 
 [data-section-type="background-video"] {
+  .video_text {
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    font-size: 25px;
+    padding: 10px;
+    @media only screen and (max-width: 767px) {
+      top: 5%;
+      font-size: 12px;
+    }
+  }
   .ImageHero {
     position: relative;
     display: flex;

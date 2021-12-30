@@ -1,4 +1,9 @@
 <section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="background-video" data-section-settings='{{ section_settings }}'>
+  <div class="video_text">
+    {% if section.settings.video-text %}
+      {{ section.settings.video-text }}
+    {% endif %}
+  </div>
   <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %}">
     <div class="ImageHero__VideoHolder">
       <figure class="is-hidden-mobile-only" style="padding-top: 0;">
@@ -44,6 +49,12 @@
         }
       ],
       "default": "large"
+    },
+    {
+      "type": "text",
+      "id": "video-text",
+      "label": "Text",
+      "default": "THE BEST PLACE TO BUY CHROME HEARTS ONLINE"
     },
     {
       "type": "text",
